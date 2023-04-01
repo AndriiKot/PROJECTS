@@ -12,11 +12,9 @@
   <a href="http://mail.ru">Link 3</a><br>
 
   <script>
-    for(let element of document.body.children){
-      if(element.matches('a[href$=".com"')){
+    for(let element of document.querySelectorAll('a[href$=".com"')){
         element.innerHTML = "Webside zone in .com"
       }
-    }
   </script>
 </body>
 </html>
