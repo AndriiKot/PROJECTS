@@ -1,0 +1,25 @@
+﻿KVÍZ:
+1. Kto býva v dome v lese?
+a) Dievča
+b) Tri medvede
+c) Štyri medvede
+
+2. Ktorý medveď je otec?
+a) Veľký medveď
+b) Stredný medveď
+c) Malý medveď
+
+3. V ktorej miske je perfektná kaša?
+a) Vo veľkej miske
+b) V strednej miske
+c) V malej miske
+
+4. Koľko stoličiek je v dome?
+a) Jedna stolička
+b) Dve stoličky
+c) Tri stoličky
+
+5. Kde spí Janka?
+a) Vo veľkej posteli
+b) V strednej posteli
+c) V malej posteli
