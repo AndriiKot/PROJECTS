@@ -1,0 +1,35 @@
+﻿
+1. Что такое литерал?
+
+2. Что такое "let"?
+
+3. let amount = 0 можно ли amount присвоить новое значение и новый тип?
+
+4. let amount = 15;
+   let price = 20;
+   Как можно увеличить значение переменной 'amount' на значение переменной 'price'
+
+5. const MAX_VALUE = 300;
+   MAX_VALUE = 200 
+   Что вызовет данный код?
+
+6. const MAX_VALUE = 300;
+   Как называется переменные объявлены в таком стили?
+
+7. const total = 1500;
+   Как называется переменные объявлены в таком стили?
+
+8. Валидный ли данный код:
+   let year = 2020,
+   migration = 'Kiev',i,
+   counter = 0;
+
+9. let year = 2020,
+   migration = 'Kiev',i,
+   counter = 0;      // Как лучше записать данный код?
+
+10. const goods = order[groupName];
+    const amount = calculateSubtotal(goods);
+    expenses.set(groupName, amount);
+    Укажите в этом участке кода 'Промежуточные переменные'
+

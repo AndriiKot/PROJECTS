@@ -1,0 +1,49 @@
+﻿
+1. Литерал или безымянная константа - это запись в исходном коде компьютерной программы, предстовляющее собой фексированое значение
+
+2. let - это деректива(ключевое слово) которая объевляет переменную с блочной областью видемостью.
+
+3. let amount = 0;
+   amount = 25; // amount получает новое значение
+   amount = 'new string' !!! переменой в программах лучше не менять тип данных
+
+4.
+   let amount = 15;
+   let price = 20;
+   amount += price;  // amount = amount + price
+
+5.
+   const MAX_VALUE = 300;
+   MAX_VALUE = 200 !!! Данный код вызовет ошибку
+
+6. const MAX_VALUE = 300;
+   переменные объявленны в таком стили называются 'Глобальными константами'
+
+7. const total = 1500;
+   переменные объявленны в таком стили называются 'Локальными константами'
+
+8. let year = 2020,
+   migration = 'Kiev',i,
+   counter = 0;          // Данный код валидный но плохо читаемый
+
+9.let year = 2020;
+  let migration = 'Kiev';
+  let i;
+  let counter = 0;       // Данный код валидный и хорошо читаемый
+
+  Выделяем константы
+  
+  const year = 2020;
+  const migration = 'Kiev';
+  let i;
+  let counter = 0;
+
+10. const goods = order[groupName];
+    const amount = calculateSubtotal(goods);
+    expenses.set(groupName, amount);
+    
+    goods, amount называются 'Промежуточными переменными'
+
+
+
+   
