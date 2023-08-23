@@ -1,0 +1,116 @@
+﻿1. select 
+      f.title,
+      l.name as "language_name"
+   from 
+  	film f
+	inner join "language" l
+           on f.language_id = l.language_id;
+
+2. При внутренем cоеденении двух таблиц 
+   .берется первая строка с первой таблици и проверяется условие которое указано после "on" 
+   с первой строчтой второй таблици  не верное то проверка идет дальше берется опять первая строка
+   первой таблийи и проверяется уже со второй строкой второй тоблици и так пока условия не будет удовлетворенно
+   Если условие удовлетворяетс результат то создаеётся ТРЕТЬЯ ВЕРТУАЛЬНАЯ ТАБЛИЦА (РЕЗУЛЬТИРУЮЩАЯ ТАБЛИЦА) в которую входят вся строка из 
+   первой таблица и вся строка из второй. НО ПОСЛЕ УДОВЛЕТВОРЕНИЯ ПРОВЕРКА ПЕРВОЙ СТРОКИ ИЗ ТАБЛИЦИ НЕ ЗАКАНЦИВАЕТСЯ А ИДЕТ
+   ДАЛЬШЕ а законцится только тогда когда будет произведенна проверка певрой строки  со всеми строками по выражению со второй таблицей
+   и так далие все строки первой тоблици сравниваются со всеми строками второй таблици не зависимо от результата 
+
+3. При соеденении таблиц все ограничители будут братся из РЕЗУЛЬТИРУЙШЕЙ ТАБЛИЦИ или ВЕРТУАЛЬНОЙ ТАБЛИЦИ
+   У результирушей таблици нет имени.
+   Также "SELECT" тоже будет браться из РЕЗУЛЬТИРУЙЩЕЙ ТАБЛИЦИ.
+
+4.
+select 
+	f.title,
+	a.first_name || ' ' || a.last_name as "Full Name"
+from film_actor fa 
+	inner join actor a 
+		on a.actor_id  = fa.actor_id
+	inner join film f
+		on fa.film_id = f.film_id
+order by f.title;
+
+select 
+	title as "film title",
+	first_name || ' ' || last_name as " Full Name"
+from film f 
+	inner join film_actor fa 
+		using(film_id)
+	inner join actor a 
+		using(actor_id)
+order by
+	title;
+   
+    С начала происходит соеденение двух таблици, а потом уже результируещая таблица этих двух таблиц соеденяется с третеё таблицей
+    и получаем новую результирующую таблицу по каторой будут выведены поля "select" команды "order by" и т.д.
+
+5.
+select  distinct
+a.first_name || ' ' || a.last_name as "Actor Name"
+from inventory i
+	inner join film f 
+		on i.film_id = f.film_id 
+	inner join film_actor fa 
+		on f.film_id  = fa.film_id 
+	inner join actor a 
+		on fa.actor_id  = a.actor_id 
+order by 
+	a.first_name || ' ' || a.last_name;
+
+6.
+   select distinct
+   a.first_name || ' ' || a.last_name as "Actor Name"
+   from inventory i
+	inner join film f
+		using(film_id)
+        inner join film_actor fa
+                using(film_id)
+        inner join actor a
+                using(actor_id)
+    order by
+        a.first_name || ' ' || a.last_name
+
+
+    alt.
+    select distinct
+       a.first_name || ' ' || a.last_name
+    from 
+       film_actor fa
+       inner join actor a
+          using (actor_id)
+       inner join film f
+          using (film_id)
+       inner join inventory i
+	  using (film_id)
+     order by 
+     a.first_name || ' ' || a.last_name
+
+7.
+	select 
+		f.title
+	from film f 
+		  left outer join inventory i 
+  	          using(film_id)
+	where i.inventory_id is NULL     
+
+8. В начале левое внешнее соеденение получает результат внутренего соеденения, но также добавляются все занчения которые не удовлитворяет условие
+   те поля в котором нет значений будете значение NULL.
+
+9. using не дублирует поля по котором было условие.
+
+10.
+select 
+	f.title,
+	a.first_name || ' ' || a.last_name as actor_name
+from 	
+	film f 
+	cross join actor a ;
+
+"CROSS JOIN" декардовое произведение можно производить между любыми таблицами даже не связаные межеду собой общими полями.
+
+
+
+
+
+
+  

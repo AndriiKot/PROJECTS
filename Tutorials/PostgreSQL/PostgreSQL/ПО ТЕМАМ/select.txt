@@ -1,0 +1,7 @@
+﻿select 1;        -- запросы select можно писать не привязываясь к таблице
+
+select 5 + 6;    -- также можно записывать выражения
+select 1 = 6;    -- [] так в SQL обозначается ложь(false)
+select '' = '';  -- [v] истина (true)
+select 1 = 1 and null = ''; --[NULL]
+selcet 1 = 1 or null = '';  --[v]

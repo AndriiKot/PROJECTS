@@ -1,0 +1,39 @@
+﻿1. Какой результат будет получен:
+  NULL = 'Some string'  -- ?   
+  'Some string' = NULL  -- ?   
+  ''   = 'Some string'  -- ?  
+  NULL || 'Some string' -- ?   
+  'Some string' || NULL -- ?   
+  ''   || 'Some string' -- ?   
+  NULL <> 'Some string' -- ?   
+  NULL = NULL           -- ?   
+  NULL IS NULL          -- ?   
+  ''   = ''             -- ?   
+  NULL = ''             -- ?   
+  select 1=1 and NULL = ''   -- ? 
+  select 1=1 or NULL = ''    -- ?  
+
+  
+  
+
+ 
+
+ В таблице 'adress' есть поле 'adress2' как сравнить значение 'Kiev' на неравенство так чтобы исключит все значения
+ которые равны 'Kiev' а также чтобы в результат вошли и поля которые равны NULL
+ 
+ select *
+ from address
+ where address2 <> 'Kiev' --,
+
+
+ select *
+ fram address a
+ where address2 in ('Kiev','',null) --? Null 
+
+2. При сортировки, NULL значения если есть в сорируещем поле как себя ведёт?
+ 
+3. Из таблици "adress" выведетея все поля отсортируйте по возрастанию поля 'address2' но так чтобы поля со значения null
+   были в начале таблици.
+ 
+4. Из таблици "adress" выведете все поля отсортируйте по убыванию поля "address2" но так чтобы поля со знмчения null
+   были в конце таблици.

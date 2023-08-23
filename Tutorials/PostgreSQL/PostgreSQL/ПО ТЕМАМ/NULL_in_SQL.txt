@@ -1,0 +1,21 @@
+﻿select null = 'String';  -- [NULL]
+select 'string' = null;  -- [NULL]
+select null = null;      -- [NULL]
+select null || 'string'  -- [NULL]
+select 'string' || null  -- [NULL]
+select 1 = 1 and null = ''; --[NULL]
+select 1 = 1 or null = ''; --[v]
+in(value_1,value_2,null)  -- !!! null  в конструкции in() бесмысленый
+
+
+select *
+from address a 
+where address2 <> 'Moscow';   --если в поле address2 будет хранится значение NULL то они не подут в данную выборку
+
+
+select *
+from address a
+where address2 <> 'Moscow' or address2 is null;  --в сравнения будут включенны поле address2 со значением null 
+
+--если нужно получить какое либо сравнение со значение NULL то используется конструкция
+-- is , is not               is для соответствия ; is not для разногласия

@@ -1,0 +1,325 @@
+﻿1. select disticnt
+	rating
+   from 
+	film f;
+  
+   select
+	rating
+   from
+	film f
+   group by
+	rating;
+
+2.
+   select 
+	rating,
+        count(*) as films_count
+   from 
+	film f
+   group by
+	rating;
+
+3. 
+	select
+		rating,
+		sum(length)
+	from
+		film f
+	group by
+		rating;
+
+4.  
+	select
+		sum(length),
+		min(length),
+		max(length),
+                avg(length)
+	group by
+		rating;
+
+5.
+	select
+		rating,
+		count(*) films_count,
+		sum(length) as total_length,
+		max(length) as max_length,
+		min(length) as min_length,
+		avg(length) as avg
+	from
+		film f
+	group by
+		rating;
+
+6.
+	select
+		rating,
+		bool_and(length < 185)
+	from
+		film f
+	group by
+		rating;
+
+7. 
+	select
+		rating,
+		bool_or(length < 185)
+	from
+		film f
+	group by
+		rating;
+
+8.
+	select
+		rating,
+		string_agg(title, '; ')
+	from
+		film f
+	group by
+		rating;
+
+9.
+	select
+		count(*)
+      	from 
+		film f;
+
+10. select, from, group by, order by
+
+11.
+	select 
+		rating,
+		rental_rate,
+		count(*)
+	from
+		film f
+	group by
+		rating,
+		rental_rate
+	order by
+		rating,
+		rental_rate;
+
+12. 
+	select
+		substring(title,1,1),
+		rating,
+		rental_rate,
+		count(*)
+	from
+		film f
+	group by
+		rating,
+		rental_rate,
+		substring(title,1,1),
+	order by
+		substring(titl,1,1),
+		rating,
+		rental_rate
+
+
+
+
+13.
+	select 
+		  f.title,
+		  count(i.inventory_id)
+	from 
+		inventory i 
+		right join film f 
+		on f.film_id = i.film_id 
+	group by
+		f.title
+	order by 	
+		count(*) 
+
+14. Внутренее соеденение можно сокрощенно записывать просто "JOIN"
+    если просто указать 'join'  то соеденение по умолчанию будет 
+    внутренее
+    Например:
+	select
+		f.title,
+		count(*)
+	from inventory i
+		join film f
+			using(film_id)
+	group by
+		f.title
+	order by
+		f.title;
+
+15.
+	select 
+		f.title,
+		count(i.film_id)
+	from 	
+		film f 
+		left join inventory i 
+		using(film_id)
+	group by
+		f.title
+	order by 	
+		count(i.film_id)
+
+16. "SELECT","FROM","WHERE","GROUP BY","ORDER BY"
+
+17.
+
+select 
+	f.title,
+	count(fc.category_id) as category_count
+from film f 
+	left join film_category fc 
+		using(film_id)
+group by
+	f.title
+order by 	
+	category_count
+    	
+
+18.
+select
+ 	a.last_name || ' ' || a.first_name,
+ 	count(fa.film_id) as film_count,
+ 	count(distinct fc.category_id) as category_count
+from 		
+	film_actor fa 
+	   join actor a 
+			using(actor_id)
+	   join film_category fc 
+	   		using(film_id)
+group by
+ 	a.last_name || ' ' || a.first_name
+order by 	
+	a.last_name || ' ' || a.first_name;
+
+select
+ 	a.last_name || ' ' || a.first_name as "Full Name",
+ 	count(fa.film_id) as film_count,
+ 	count(distinct fc.category_id) as category_count
+from 		
+	film_actor fa 
+	   join actor a 
+			using(actor_id)
+	   join film_category fc 
+	   		using(film_id)
+group by
+	"Full Name"
+order by 	
+	"Full Name";
+
+19.
+select 
+	f.title,
+	count(*) as payment_count
+from film f 
+	join inventory i 
+		using(film_id)
+	join rental r 
+		using(inventory_id)
+	join payment p 
+		using(rental_id)
+where 	
+	f.rental_rate > 2
+group by 	
+	f.title
+having 
+	count(*) > 10
+order by 	
+	payment_count desc;
+
+
+select 
+	f.title,
+	count(*)
+from rental r 
+	join inventory i 
+		on(i.inventory_id = r.inventory_id)
+	join film f 
+  		on(f.film_id = i.film_id)
+where rental_rate > 2
+group by 
+	f.title
+having 
+	count(*) > 10
+order by 
+	f.title 
+
+
+
+20.
+   "SELECT","FROM","WHERE","GROUP BY","HAVING","ORDER BY"
+
+21.
+select 
+	first_name || ' ' || last_name as "Full Name",
+	count(f.film_id) as "Count film 'G'",
+	count(f.rating) as "couunt film 'G'"
+from 	
+	actor a 
+	left join film_actor fa 
+		on a.actor_id = fa.actor_id 
+	left join film f 
+		on(f.film_id = fa.film_id)
+		and f.rating = 'G'
+group by 	
+	"Full Name"
+order by 	
+	count(f.film_id) desc;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

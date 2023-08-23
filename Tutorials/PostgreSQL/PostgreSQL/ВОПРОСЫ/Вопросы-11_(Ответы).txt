@@ -1,0 +1,155 @@
+﻿1.
+select 
+	case
+	  when length(first_name || ' ' || last_name) > 15
+	  then (substring(first_name,1,7) || ' ' || substring(last_name,1,7))
+	  else first_name || ' ' || last_name 
+	end as "full name"
+from 	actor a ;
+
+2.
+select 
+	case
+	  when length(first_name || ' ' || last_name) > 15
+	  then (substring(first_name,1,7) || ' ' || substring(last_name,1,7))
+	  else first_name || ' ' || last_name 
+	end as "full name"
+from 	actor a 
+where 
+	substring(
+	case
+	  when length(first_name || ' ' || last_name) > 15
+	  then (substring(first_name,1,7) || ' ' || substring(last_name,1,7))
+	  else first_name || ' ' || last_name 
+	end,
+	1,
+	2
+	) = 'Ca';
+order by
+	case
+	  when length(first_name || ' ' || last_name) > 15
+	  then (substring(first_name,1,7) || ' ' || substring(last_name,1,7))
+	  else first_name || ' ' || last_name 
+	end;
+
+select 
+	case
+	  when length(first_name || ' ' || last_name) > 15
+	  then (substring(first_name,1,7) || ' ' || substring(last_name,1,7))
+	  else first_name || ' ' || last_name 
+	end as "full name"
+from 	actor a 
+where 
+	substring(
+	case
+	  when length(first_name || ' ' || last_name) > 15
+	  then (substring(first_name,1,7) || ' ' || substring(last_name,1,7))
+	  else first_name || ' ' || last_name 
+	end,
+	1,
+	2
+	) = 'Ca'
+order by 
+	"full name";
+
+3.
+select 
+ 	f.title,
+ 	l."name",
+ 	case 
+ 		when l."name" = 'English' then 'Английский'
+ 		when l."name" = 'Italian' then 'Итальянский'
+ 		when l."name" = 'Japanese' then 'Японский'
+ 		when l."name" = 'Mandarin' then 'Китайский'
+ 		when l."name" = 'French'  then 'Французкий'
+ 		when l."name" = 'German' then   'Немецкий'
+ 	end as "Язык"
+from 
+	film f 
+		join "language" l on f.language_id = l.language_id;
+
+select 
+ 	f.title,
+ 	l."name",
+ 	case 
+ 		when l."name" = 'English' then 'Английский'
+ 		when l."name" = 'Italian' then 'Итальянский'
+ 		when l."name" = 'Japanese' then 'Японский'
+ 		when l."name" = 'Mandarin' then 'Китайский'
+ 		when l."name" = 'French'  then 'Французкий'
+ 		when l."name" = 'German' then   'Немецкий'
+ 		else 'Неизвестный язык'
+ 	end as "Язык"
+from 
+	film f 
+		join "language" l on f.language_id = l.language_id;
+
+4. NULL
+
+5.
+select 
+ 	f.title,
+ 	l."name",
+ 	case 
+ 	        l."name"
+ 		when 'English' then 'Английский'
+ 		when 'Italian' then 'Итальянский'
+ 		when 'Japanese' then 'Японский'
+ 		when 'Mandarin' then 'Китайский'
+ 		when 'French'  then 'Французкий'
+ 		when 'German' then   'Немецкий'
+ 		else 'Неизвестный язык'
+ 	end as "Язык"
+from 
+	film f 
+		join "language" l on f.language_id = l.language_id;
+
+6. 
+select 
+ 	f.title,
+ 	case 
+ 	    l."name"
+ 		when 'English' then 'Английский'
+ 		when 'Italian' then 'Итальянский'
+ 		when 'Japanese' then 'Японский'
+ 		when 'Mandarin' then 'Китайский'
+ 		when 'French'  then 'Французкий'
+ 		when 'German' then   'Немецкий'
+ 	--	else 'Неизвестный язык'
+ 	end as "Язык",
+ 	f.rating,
+ 	f.language_id,
+ 	l.language_id 
+from 
+	film f 
+		join "language" l 
+	    on case when f.rating = 'G' then 2
+	    else f.language_id end = l.language_id;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
