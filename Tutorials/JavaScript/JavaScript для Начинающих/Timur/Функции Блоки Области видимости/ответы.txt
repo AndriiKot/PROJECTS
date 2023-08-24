@@ -1,0 +1,17 @@
+﻿
+1.
+  const sum = (a, b) => {
+    const result = a + b'
+    return result;
+  }
+
+2.
+   'sum' это имя функции
+   (a, b) - это аргументвы функции
+   sum(2, 3)  2 и 3 - это параметры функции
+
+3. 
+   funtion sum(a, b) {
+     return a + b;
+   }
+
