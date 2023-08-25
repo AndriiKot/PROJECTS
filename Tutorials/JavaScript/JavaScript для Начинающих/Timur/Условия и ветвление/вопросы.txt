@@ -1,0 +1,59 @@
+﻿
+1. Напишите функцию которая на вход принимает один параметр который относится к типы 'number'
+   и если оно меньше нуля то вернуть исключение 'Negative price'
+   иначе вернуть это число
+
+2. Почему код ниже является плохим примером кода?
+  
+  if (item.price < 0 ) throw 'Negative price'
+  else amount += item.price;
+
+  // or
+
+  if (item.price < 0 ) {
+    throw 'Negative price'
+  } else {
+    amount += item.price;
+  }
+
+3. Почему данный код является тепичной ошибко начинающего?
+  // some code ...
+
+  if (item.price > 0) return true;
+    return false
+
+  // some code ...
+
+
+4. Чем плож данный код ниже?
+  
+  if (order[groupName] && order[groupName].length > 0) {
+     total += calculateTotal(order[groupName]);
+     count += order[groupName].length;
+  }
+
+5. Приведите пример с исаользованием 'Тернанрого оператора'
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
