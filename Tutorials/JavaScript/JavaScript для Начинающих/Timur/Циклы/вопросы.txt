@@ -1,0 +1,57 @@
+﻿
+1.Пройдитес циклом по всему масссиву 
+  и выведете для каждоко эелемента мпоссива строку 'Price: ' плюс значение елемента
+
+const basket = [
+  { price: 1500 },
+  { price: 25 },
+  { price: 100 },
+  { price: 10 },
+];
+
+2.
+ const bascet = [
+   { name: 'Laptop', price: 1500 },
+   { name: 'Mouse', price: 25 },  
+   { name: 'Keyboard', price: 100 },
+   { name: 'HDMI', price: 10 },
+ ];
+
+ for (const { name, price } of basket) {
+   console.log(`Price of $ {name} is ${price}`);
+ }
+
+3. Как в примере выше назвается конструкция const {name, price}?
+4. Что такое в примере выще `.. `?
+
+5. Пройдитеся циклоам по ключам объекта basket.
+
+  const basket = {
+    Laptop: 1500,
+    Mouse: 25,
+    Keyboard: 100,
+    HDMI: 10,
+  };
+
+6. Как в данном примере цикл for..in заменить на for..of
+
+  const electronics = {
+    Laptop: 1500,
+    Mouse: 25,
+    Keyboard: 100,
+    HDMI: 10,
+  };
+
+7. Выведети название и цену товара
+
+  const names = ['Laptop', 'Mouse', 'Keyboard', 'HDMI']
+
+  const prices = [1500, 25, 100, 10]
+
+
+
+  
+
+  
+
+
