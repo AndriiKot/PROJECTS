@@ -1,0 +1,16 @@
+﻿
+
+1.
+select 
+	a.first_name || ' ' || a.last_name as "Full Name",
+	count(fa.film_id)
+from
+	actor a 
+		join film_actor fa 
+			on(fa.actor_id = a.actor_id)
+group by 
+	"Full Name"
+order by 
+	count(fa.film_id) desc
+limit 5
+offset 5

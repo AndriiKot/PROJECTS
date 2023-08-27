@@ -1,0 +1,10 @@
+﻿
+1.
+select 
+	f.rating,
+	count(*),
+	count(*) filter(where f.rental_duration >= 5)
+from 
+	film f
+group by
+	f.rating 
