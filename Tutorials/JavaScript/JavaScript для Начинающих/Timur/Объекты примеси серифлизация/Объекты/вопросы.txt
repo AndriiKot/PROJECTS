@@ -1,0 +1,32 @@
+﻿
+1.
+   const basket = {
+     Laptop: 1500,
+     Keyboard: 100,
+     HDMI: 10,
+   };
+
+  Добавте в объект 'basket' поле 'Mouse' со значение 25
+
+2. Удалите из объекта поле 'Keyboard'
+
+3.
+   const basket = {
+     Laptop: 1500,
+     Keyboard: 100,
+     HDMI: 10,
+   };
+
+  const order = { ...basket, HDMI: 10, Mouse: 20 };
+  Какое значение будет у поля 'Mouse'
+
+   const basket = {
+     Laptop: 1500,
+     Keyboard: 100,
+     HDMI: 10,
+   };
+
+  const order = { HDMI: 10, Mouse: 20, ...basket };
+
+
+  
