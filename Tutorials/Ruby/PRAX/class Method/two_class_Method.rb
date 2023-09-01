@@ -20,6 +20,12 @@ array.collect do |i|
   p (meth1 << meth2)[i]
 end
 
+array.collect do |i|
+  plus = i + i
+  plus *= plus
+  p plus
+end
+
 p array
 
 #array.collect(&meth2).each(&method(:puts))
