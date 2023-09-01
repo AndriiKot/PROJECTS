@@ -1,0 +1,12 @@
+﻿MDN
+
+throw       JavaScript try MDN
+try
+catch
+finally
+----------------------------------------
+
+await func()  JavaScript then catch MDN
+  .then()
+  .catch()
+----------------------------------------
