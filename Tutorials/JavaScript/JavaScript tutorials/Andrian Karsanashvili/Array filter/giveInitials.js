@@ -70,16 +70,21 @@ function filterBoolValuesOp(arr) {
 }
 
 function filterBoolValuesDefaulMethodFilter(arr) {
-  function callback () { return true }
+  function callback (el) { return el }
   
   const filteredArray = arr.filter(callback);
 
   return filteredArray;
 }
 
-console.log(filterBoolValuesDefaulMethodFilter(array))
+const findNeedle = function(arr) {
+  const callback = function(str) {
+  return str === 'needle' ? true : false;
+  }
+  return arr.filter(callback);
+}
 
-
+console.log(findNeedle(['hay', 'junk', 'hay', 'moreJunk','needle','randomJunk']))
 
 
 
