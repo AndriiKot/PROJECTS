@@ -42,8 +42,48 @@ function giveArrayFromNumberWithPush(num) {
   return res;
 }
 
-console.log(giveArrayFromNumber(5));
-console.log(giveArrayFromNumberWithPush(5));
+// filter array
+
+const array = [true, true, true, false, false, true, false, true, false];
+
+function filterBoolValues(arr) {
+  const filteredArray = [];
+  const len = arr.length
+  for (let i = 0; i < len; i++ ) {
+    const el = arr[i];
+
+    el ? filteredArray.push(el) : undefined;
+  }
+  return filteredArray;
+}
+
+console.log(filterBoolValues(array));
+console.log(filterBoolValues(array).length);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
