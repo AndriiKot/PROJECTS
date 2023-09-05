@@ -1,0 +1,37 @@
+﻿
+
+1. 
+	const calculateTotal = (order) => {
+	  trow 'Always throws';
+	};
+
+        const prices = [1500, 100, 20];
+	console.log(calculateTotal(prices));
+
+        Программа будет остановленна и бедет выведенно сообщение 'Always throws'
+        Но распечатка всего стек трейса мы не увидем
+    
+2.      const calculateTotal = (order) => {
+	  throw 'Always throws';
+	};
+	
+	try {
+	  const prices = [1500, 100, 20];
+	  console.log(calculateTotal(price));
+ 	} catch (err) {
+	  console.error(err);
+	}
+
+3.	const calculateTotal = (order) => {
+	  throw new Error('Always throws');
+	};
+
+	try {
+	  const prices = [1500, 100, 20];
+ 	  console.log(calculateTotal(price));
+	} catch (err) {
+	  console.error(err);
+	}
+
+
+

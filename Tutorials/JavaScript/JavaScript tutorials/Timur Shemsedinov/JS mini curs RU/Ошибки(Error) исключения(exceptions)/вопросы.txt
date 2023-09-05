@@ -1,0 +1,14 @@
+﻿
+1. Данна функции
+	const calculateTotal = (order) => {
+	  ... ;
+	};
+
+        const prices = [1500, 100, 20];
+	console.log(calculateTotal(prices));
+    
+   бросте исключения в функции calcaltateTotal
+
+2. В примере выще перехватите исключение
+
+3. Распечатайте весь стек трейс ошибки
