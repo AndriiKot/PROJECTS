@@ -24,3 +24,5 @@ function findAverage(arr) {
 
 console.log(Math.floor(1.999));
 console.log(Math.ceil(1.0000001));
+console.log(Math.round(1.3));
+console.log(Math.round(1.5));
