@@ -33,7 +33,17 @@ function giveArrayFromNumber(num) {
   return res;
 }
 
+function giveArrayFromNumberWithPush(num) {
+  const res = [];
+
+  for (let i = num; i > 0; i--) {
+    res.push(i);
+  }
+  return res;
+}
+
 console.log(giveArrayFromNumber(5));
+console.log(giveArrayFromNumberWithPush(5));
 
 
 
