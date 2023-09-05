@@ -21,4 +21,6 @@ function findAverage(arr) {
   return  sumOfAllNumbers / leng;
 }
 
-console.log(findAverage([1, 55, 69, 420]))
+
+console.log(Math.floor(1.999));
+console.log(Math.ceil(1.0000001));
