@@ -69,7 +69,17 @@ function filterBoolValuesOp(arr) {
   return res;
 }
 
-console.log(filterBoolValuesOp(array))
+function filterBoolValuesDefaulMethodFilter(arr) {
+  function callback () { return true }
+  
+  const filteredArray = arr.filter(callback);
+
+  return filteredArray;
+}
+
+console.log(filterBoolValuesDefaulMethodFilter(array))
+
+
 
 
 
