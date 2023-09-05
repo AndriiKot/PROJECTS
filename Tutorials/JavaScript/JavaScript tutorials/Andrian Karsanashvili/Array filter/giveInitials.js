@@ -57,8 +57,20 @@ function filterBoolValues(arr) {
   return filteredArray;
 }
 
-console.log(filterBoolValues(array));
-console.log(filterBoolValues(array).length);
+function filterBoolValuesOp(arr) {
+  let res = 0;
+  const len = arr.length;
+
+  for (let i = 0; i < len; i++) {
+    const el = arr[i]
+
+    el ? res += 1 : undefined;
+  }
+  return res;
+}
+
+console.log(filterBoolValuesOp(array))
+
 
 
 
