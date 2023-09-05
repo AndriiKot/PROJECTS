@@ -18,11 +18,51 @@ function findAverage(arr) {
     sumOfAllNumbers += arr[i];
   }
 
-  return  sumOfAllNumbers / leng;
+  return  Math.round(sumOfAllNumbers / leng);
 }
 
+// 5 => [5, 4, 3, 2, 1]
 
-console.log(Math.floor(1.999));
-console.log(Math.ceil(1.0000001));
-console.log(Math.round(1.3));
-console.log(Math.round(1.5));
+function giveArrayFromNumber(num) {
+  const res = new Array(num);
+
+  for (let i = 0; i < num; i++) {
+     let n = num - i;
+     res[i] = n;
+  }
+  return res;
+}
+
+console.log(giveArrayFromNumber(5));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
