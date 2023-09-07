@@ -1,0 +1,10 @@
+﻿
+Ruby:
+ * Regex
+
+JS:
+ * this
+ * bind,apply,call
+
+SQL
+  * Kурс
