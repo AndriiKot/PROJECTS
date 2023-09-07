@@ -9,3 +9,10 @@ Asynchronous programming in JavaScript as of today
 * observable/events
 * functor + chaining + composition
 * for await + Symbol.asynclerator 
+
+-------------------------------------
+
+* async.js > callbacks
+* async/await > promises
+* event > observable
+* functor + chaining + composition
