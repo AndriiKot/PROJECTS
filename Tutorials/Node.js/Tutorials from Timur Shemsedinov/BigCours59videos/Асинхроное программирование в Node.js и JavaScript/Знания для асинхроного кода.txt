@@ -1,0 +1,11 @@
+﻿
+Asynchronous programming in JavaScript as of today
+
+* callbacks
+* async.js
+* promises
+* async/await
+* generators/yield
+* observable/events
+* functor + chaining + composition
+* for await + Symbol.asynclerator 
