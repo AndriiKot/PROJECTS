@@ -2,7 +2,7 @@
 
 def m1(a = 0,b = 0) end
 
-def m2(*a) 
+def m2(*a)                # !!! *args работает медленно
 	a[0] = a[0] || 0
  	a[1] = a[1] || 0
 end
@@ -20,13 +20,13 @@ x.report('def m1(a = 0,b = 0)'){
 	n.times { m1 }
 }
 
-# x.report('def m2(*a)'){
-# 	n.times { m2 }
-# }
+x.report('def m2(*a)'){
+	n.times { m2 }
+}
 
-# x.report('proc m3_1 a = a || 0...') {
-#  	n.times { m3_1[]}
-# }
+x.report('proc m3_1 a = a || 0...') {
+ 	n.times { m3_1[]}
+}
 
 x.report('proc m3 a ||= 0...') {
  	n.times { m3[]}
