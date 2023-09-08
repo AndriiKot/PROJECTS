@@ -1,0 +1,15 @@
+﻿
+1. Данн объект 'values' как можно пробижется по полям этого объекта?
+   Приемените к каждому значению поля оперецию 'typeof' и выедете результат 
+   сновой строки для коаждого значения поля.
+
+const values = {
+	name: 'Mouse',
+	price: 25,
+	stock: false,
+	avg: (a, b) => (a + b) / 2n,
+	reference: null,
+	primitive: undefined,
+	numbers: [NaN, Infinity],
+}
+
