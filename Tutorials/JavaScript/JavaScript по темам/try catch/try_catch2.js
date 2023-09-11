@@ -8,6 +8,11 @@ function my_fn1(number) {
   }
 }
 
-my_fn1(2)
-my_fn1('fa')
+try {
+   my_fn1('fdsa')
 
+} catch (err) {
+  console.log(err);
+} 
+
+console.log("Hello!!!")
