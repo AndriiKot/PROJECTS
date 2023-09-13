@@ -1,14 +1,9 @@
 ﻿
-function printName(hello, bye) {
-  console.log(hello + this.firstName);
-  console.log(bye + this.firstName);
+function plus(a, b) {
+  console.log(a + b);
 }
 
-const user = {
-  firstName: 'Andrii',
-}
+const plus_two = plus.bind(null, 2);
 
-const hello_and_bye = printName.bind(user, "Hello, ");
-
-hello_and_bye("Bye, ");
-
+plus_two(10)
+plus_two(5)
