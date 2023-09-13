@@ -8,7 +8,7 @@ const user = {
   firstName: 'Andrii',
 }
 
-const hello_and_bye = printName.bind(user, "Hello, ", "Bye, ")
+const hello_and_bye = printName.bind(user, "Hello, ");
 
-hello_and_bye()
+hello_and_bye("Bye, ");
 
