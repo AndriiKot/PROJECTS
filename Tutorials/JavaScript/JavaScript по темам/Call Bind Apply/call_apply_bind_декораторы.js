@@ -13,6 +13,11 @@ function printName(hello,bye) {
   console.log(bye + this.Name +  '!');
 }
 
+function printfirstName(hello, bye) {
+  console.log(hello + this.Name + '!');
+  console.log(bye + this.Name +  '!');
+}
+
 
 
 
@@ -21,6 +26,11 @@ printThis.call({});
 printName.call(user);
 printName.call(user, 'Hello, ');
 printName.call(user, 'Hello, ','Bye, ');
+
+
+
+printfirstName.apply(user,['Hello, ', 'Bye, ']);
+
 
 
 
