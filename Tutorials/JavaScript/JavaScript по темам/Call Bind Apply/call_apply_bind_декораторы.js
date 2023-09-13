@@ -8,8 +8,9 @@ const user = {
   Name: 'Andrii',
 }
 
-function printName(hello) {
+function printName(hello,bye) {
   console.log(hello + this.Name + '!');
+  console.log(bye + this.Name +  '!');
 }
 
 
@@ -18,6 +19,9 @@ function printName(hello) {
 printThis(this);
 printThis.call({});
 printName.call(user);
-printName.call(user, 'Hello, ')
+printName.call(user, 'Hello, ');
+printName.call(user, 'Hello, ','Bye, ');
+
+
 
 
