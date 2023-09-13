@@ -5,16 +5,19 @@ function printThis() {
 
 
 const user = {
-  Name: 'Andrii'
+  Name: 'Andrii',
 }
 
-function printName() {
-  console.log(this.Name)
+function printName(hello) {
+  console.log(hello + this.Name + '!');
 }
+
+
 
 
 printThis(this);
 printThis.call({});
 printName.call(user);
+printName.call(user, 'Hello, ')
 
 
