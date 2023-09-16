@@ -1,0 +1,18 @@
+﻿
+1.'while do end' работает быстерея чем 'loop do'
+
+2.
+ a = 0 
+ while
+ a += 1
+ break if a == 1_000_000
+ end
+
+ while
+ @a = @a || 0
+ @a += 1
+ break if @a == 1_000_000
+ end
+
+  
+'a' - работает быстрея чем @a в цикле 'while do end'
