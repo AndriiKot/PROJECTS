@@ -9,3 +9,6 @@ end
 
 p server
 p client
+
+[server,client].each(&:take)
+

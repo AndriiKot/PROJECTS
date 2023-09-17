@@ -12,7 +12,7 @@ m3_1 = proc {|a,b| a = a || 0; b = b || 0}
 m4 = proc {|a = 0,b = 0|}
 
                
-n = 1_000_000_00 * 3
+n = 1_000_000_00 
 
 Benchmark.bm do |x|
 

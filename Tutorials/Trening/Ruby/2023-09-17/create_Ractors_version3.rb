@@ -5,8 +5,10 @@ main = Ractor.new name: 'main' do
   end
 end
 
-other_racts = 5.times.map do |i|
-  Ractor.new main, i do |main_ract,index| 
+other_racts = 5.times.each do |i|
+  Ractor.new(main, i) do |main_ract,index| 
+    delay = rand
+    sleep delay
     main_ract.send "Hi from ractor #{index + 1}"
   end
 end
