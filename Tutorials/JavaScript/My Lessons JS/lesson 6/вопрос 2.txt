@@ -1,0 +1,7 @@
+﻿
+2. Усовершенствуйте данный код так чтобы выбросило полный стек ошибки
+
+const calculateTotal = (order) => {
+  throw 'Always throws';
+};
+

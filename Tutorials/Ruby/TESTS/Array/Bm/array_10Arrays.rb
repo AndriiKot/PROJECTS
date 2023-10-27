@@ -22,4 +22,12 @@ x.report(' 10.times.map { Array.new } '){
 	n.times { 10.times.map { Array.new } }
 }
 
+x.report(' 10.times.each { [] } '){       
+	n.times { 10.times.each { [] } }
+}
+
+x.report(' 10.times.each { Array.new } '){       
+	n.times { 10.times.each { Array.new } }
+}
+
 end

@@ -1,12 +1,5 @@
 ﻿
-JS My lessons
-
-Ruby:
- * Regex
-
-JS:
- * this
- * bind,apply,call
-
-SQL
-  * Kурс
+cmd
+docker
+sql
+js

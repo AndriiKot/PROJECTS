@@ -5,7 +5,7 @@ main = Ractor.new name: 'main' do
   end
 end
 
-other_racts = 5.times.map do |i|
+other_racts = 5.times.each do |i|
   Ractor.new(main, i) do |main_ract,index| 
     delay = rand
     sleep delay
@@ -18,6 +18,4 @@ puts other_racts
 5.times do 
   puts main.take
 end
-
-p Ractor.count
 
