@@ -2,8 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: #282c4d;
-  color: rgba(255,255,128,0.7)}
-
+}
 body .container {
   position: absolute;
   left: 50%;
@@ -11,6 +10,7 @@ body .container {
   transform: translate(-50%, -50%);
 }
 body .container span {
+  color: rgba(255,255,128,0.7);
   font-size: 4em;
   font-family: 'Arial';
   display: inline-block;
