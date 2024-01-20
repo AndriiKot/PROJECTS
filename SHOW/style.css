@@ -4,7 +4,8 @@ body {
   background-color: #335ea4;
   position: relative;
 }
-[class|=snowball] {
+[class|=snowball-start],
+[class|=snowball-end] {
   position: absolute;
   top: 0;
   left: 0;
@@ -13,269 +14,532 @@ body {
   background: #fff;
   border-radius: 50%;
   opacity: 0;
-  animation: snowballRain 1s infinite;
+  animation: snowballStartRain 3s infinite;
 }
-.snowball-1 {
+[class|=snowball-end] {
+  animation-delay: 10s;
+}
+.snowball-start-1 {
   left: 0px;
   animation-delay: 0s;
 }
-.snowball-2 {
+.snowball-end-1 {
+  background-color: #f00;
+  animation-delay: 3s;
+}
+.snowball-start-2 {
   left: 20px;
   animation-delay: 0.1s;
 }
-.snowball-3 {
+.snowball-end-2 {
+  background-color: #f00;
+  animation-delay: 0.1s;
+}
+.snowball-start-3 {
   left: 40px;
   animation-delay: 0.2s;
 }
-.snowball-4 {
+.snowball-end-3 {
+  background-color: #f00;
+  animation-delay: 0.2s;
+}
+.snowball-start-4 {
   left: 60px;
   animation-delay: 0.3s;
 }
-.snowball-5 {
+.snowball-end-4 {
+  background-color: #f00;
+  animation-delay: 0.3s;
+}
+.snowball-start-5 {
   left: 80px;
   animation-delay: 0.4s;
 }
-.snowball-6 {
+.snowball-end-5 {
+  background-color: #f00;
+  animation-delay: 0.4s;
+}
+.snowball-start-6 {
   left: 100px;
   animation-delay: 0.5s;
 }
-.snowball-7 {
+.snowball-end-6 {
+  background-color: #f00;
+  animation-delay: 0.5s;
+}
+.snowball-start-7 {
   left: 120px;
   animation-delay: 0.6s;
 }
-.snowball-8 {
+.snowball-end-7 {
+  background-color: #f00;
+  animation-delay: 0.6s;
+}
+.snowball-start-8 {
   left: 140px;
   animation-delay: 0.1s;
 }
-.snowball-9 {
+.snowball-end-8 {
+  background-color: #f00;
+  animation-delay: 0.1s;
+}
+.snowball-start-9 {
   left: 160px;
   animation-delay: 0.4s;
 }
-.snowball-10 {
+.snowball-end-9 {
+  background-color: #f00;
+  animation-delay: 0.4s;
+}
+.snowball-start-10 {
   left: 180px;
   animation-delay: 0.3s;
 }
-.snowball-11 {
+.snowball-end-10 {
+  background-color: #f00;
+  animation-delay: 0.3s;
+}
+.snowball-start-11 {
   left: 200px;
   animation-delay: 0.5s;
 }
-.snowball-12 {
+.snowball-end-11 {
+  background-color: #f00;
+  animation-delay: 0.5s;
+}
+.snowball-start-12 {
   left: 220px;
   animation-delay: 0.1s;
 }
-.snowball-13 {
+.snowball-end-12 {
+  background-color: #f00;
+  animation-delay: 0.1s;
+}
+.snowball-start-13 {
   left: 240px;
   animation-delay: 0.6s;
 }
-.snowball-14 {
+.snowball-end-13 {
+  background-color: #f00;
+  animation-delay: 0.6s;
+}
+.snowball-start-14 {
   left: 260px;
   animation-delay: 0.1s;
 }
-.snowball-15 {
+.snowball-end-14 {
+  background-color: #f00;
+  animation-delay: 0.1s;
+}
+.snowball-start-15 {
   left: 280px;
   animation-delay: 0.2s;
 }
-.snowball-16 {
+.snowball-end-15 {
+  background-color: #f00;
+  animation-delay: 0.2s;
+}
+.snowball-start-16 {
   left: 300px;
   animation-delay: 0.5s;
 }
-.snowball-17 {
+.snowball-end-16 {
+  background-color: #f00;
+  animation-delay: 0.5s;
+}
+.snowball-start-17 {
   left: 320px;
   animation-delay: 0.4s;
 }
-.snowball-18 {
+.snowball-end-17 {
+  background-color: #f00;
+  animation-delay: 0.4s;
+}
+.snowball-start-18 {
   left: 340px;
   animation-delay: 0.1s;
 }
-.snowball-19 {
+.snowball-end-18 {
+  background-color: #f00;
+  animation-delay: 0.1s;
+}
+.snowball-start-19 {
   left: 360px;
   animation-delay: 0.6s;
 }
-.snowball-20 {
+.snowball-end-19 {
+  background-color: #f00;
+  animation-delay: 0.6s;
+}
+.snowball-start-20 {
   left: 380px;
   animation-delay: 0.1s;
 }
-.snowball-21 {
+.snowball-end-20 {
+  background-color: #f00;
+  animation-delay: 0.1s;
+}
+.snowball-start-21 {
   left: 400px;
   animation-delay: 0.5s;
 }
-.snowball-22 {
+.snowball-end-21 {
+  background-color: #f00;
+  animation-delay: 0.5s;
+}
+.snowball-start-22 {
   left: 420px;
   animation-delay: 0.3s;
 }
-.snowball-23 {
+.snowball-end-22 {
+  background-color: #f00;
+  animation-delay: 0.3s;
+}
+.snowball-start-23 {
   left: 440px;
   animation-delay: 0.2s;
 }
-.snowball-24 {
+.snowball-end-23 {
+  background-color: #f00;
+  animation-delay: 0.2s;
+}
+.snowball-start-24 {
   left: 460px;
   animation-delay: 0.1s;
 }
-.snowball-25 {
+.snowball-end-24 {
+  background-color: #f00;
+  animation-delay: 0.1s;
+}
+.snowball-start-25 {
   left: 480px;
   animation-delay: 0.6s;
 }
-.snowball-26 {
+.snowball-end-25 {
+  background-color: #f00;
+  animation-delay: 0.6s;
+}
+.snowball-start-26 {
   left: 500px;
   animation-delay: 0.5s;
 }
-.snowball-27 {
+.snowball-end-26 {
+  background-color: #f00;
+  animation-delay: 0.5s;
+}
+.snowball-start-27 {
   left: 520px;
   animation-delay: 0.2s;
 }
-.snowball-28 {
+.snowball-end-27 {
+  background-color: #f00;
+  animation-delay: 0.2s;
+}
+.snowball-start-28 {
   left: 540px;
   animation-delay: 0.3s;
 }
-.snowball-29 {
+.snowball-end-28 {
+  background-color: #f00;
+  animation-delay: 0.3s;
+}
+.snowball-start-29 {
   left: 560px;
   animation-delay: 0.4s;
 }
-.snowball-30 {
+.snowball-end-29 {
+  background-color: #f00;
+  animation-delay: 0.4s;
+}
+.snowball-start-30 {
   left: 580px;
   animation-delay: 0.1s;
 }
-.snowball-31 {
+.snowball-end-30 {
+  background-color: #f00;
+  animation-delay: 0.1s;
+}
+.snowball-start-31 {
   left: 600px;
   animation-delay: 0.6s;
 }
-.snowball-32 {
+.snowball-end-31 {
+  background-color: #f00;
+  animation-delay: 0.6s;
+}
+.snowball-start-32 {
   left: 620px;
   animation-delay: 0.1s;
 }
-.snowball-33 {
+.snowball-end-32 {
+  background-color: #f00;
+  animation-delay: 0.1s;
+}
+.snowball-start-33 {
   left: 640px;
   animation-delay: 0.4s;
 }
-.snowball-34 {
+.snowball-end-33 {
+  background-color: #f00;
+  animation-delay: 0.4s;
+}
+.snowball-start-34 {
   left: 660px;
   animation-delay: 0.3s;
 }
-.snowball-35 {
+.snowball-end-34 {
+  background-color: #f00;
+  animation-delay: 0.3s;
+}
+.snowball-start-35 {
   left: 680px;
   animation-delay: 0.2s;
 }
-.snowball-36 {
+.snowball-end-35 {
+  background-color: #f00;
+  animation-delay: 0.2s;
+}
+.snowball-start-36 {
   left: 700px;
   animation-delay: 0.5s;
 }
-.snowball-37 {
+.snowball-end-36 {
+  background-color: #f00;
+  animation-delay: 0.5s;
+}
+.snowball-start-37 {
   left: 720px;
   animation-delay: 0.6s;
 }
-.snowball-38 {
+.snowball-end-37 {
+  background-color: #f00;
+  animation-delay: 0.6s;
+}
+.snowball-start-38 {
   left: 740px;
   animation-delay: 0.1s;
 }
-.snowball-39 {
+.snowball-end-38 {
+  background-color: #f00;
+  animation-delay: 0.1s;
+}
+.snowball-start-39 {
   left: 760px;
   animation-delay: 0.2s;
 }
-.snowball-40 {
+.snowball-end-39 {
+  background-color: #f00;
+  animation-delay: 0.2s;
+}
+.snowball-start-40 {
   left: 780px;
   animation-delay: 0.3s;
 }
-.snowball-41 {
+.snowball-end-40 {
+  background-color: #f00;
+  animation-delay: 0.3s;
+}
+.snowball-start-41 {
   left: 800px;
   animation-delay: 0.5s;
 }
-.snowball-42 {
+.snowball-end-41 {
+  background-color: #f00;
+  animation-delay: 0.5s;
+}
+.snowball-start-42 {
   left: 820px;
   animation-delay: 0.1s;
 }
-.snowball-43 {
+.snowball-end-42 {
+  background-color: #f00;
+  animation-delay: 0.1s;
+}
+.snowball-start-43 {
   left: 840px;
   animation-delay: 0.6s;
 }
-.snowball-44 {
+.snowball-end-43 {
+  background-color: #f00;
+  animation-delay: 0.6s;
+}
+.snowball-start-44 {
   left: 860px;
   animation-delay: 0.1s;
 }
-.snowball-45 {
+.snowball-end-44 {
+  background-color: #f00;
+  animation-delay: 0.1s;
+}
+.snowball-start-45 {
   left: 880px;
   animation-delay: 0.4s;
 }
-.snowball-46 {
+.snowball-end-45 {
+  background-color: #f00;
+  animation-delay: 0.4s;
+}
+.snowball-start-46 {
   left: 900px;
   animation-delay: 0.5s;
 }
-.snowball-47 {
+.snowball-end-46 {
+  background-color: #f00;
+  animation-delay: 0.5s;
+}
+.snowball-start-47 {
   left: 920px;
   animation-delay: 0.2s;
 }
-.snowball-48 {
+.snowball-end-47 {
+  background-color: #f00;
+  animation-delay: 0.2s;
+}
+.snowball-start-48 {
   left: 940px;
   animation-delay: 0.1s;
 }
-.snowball-49 {
+.snowball-end-48 {
+  background-color: #f00;
+  animation-delay: 0.1s;
+}
+.snowball-start-49 {
   left: 960px;
   animation-delay: 0.6s;
 }
-.snowball-50 {
+.snowball-end-49 {
+  background-color: #f00;
+  animation-delay: 0.6s;
+}
+.snowball-start-50 {
   left: 980px;
   animation-delay: 0.1s;
 }
-.snowball-51 {
+.snowball-end-50 {
+  background-color: #f00;
+  animation-delay: 0.1s;
+}
+.snowball-start-51 {
   left: 1000px;
   animation-delay: 0.5s;
 }
-.snowball-52 {
+.snowball-end-51 {
+  background-color: #f00;
+  animation-delay: 0.5s;
+}
+.snowball-start-52 {
   left: 1020px;
   animation-delay: 0.3s;
 }
-.snowball-53 {
+.snowball-end-52 {
+  background-color: #f00;
+  animation-delay: 0.3s;
+}
+.snowball-start-53 {
   left: 1040px;
   animation-delay: 0.4s;
 }
-.snowball-54 {
+.snowball-end-53 {
+  background-color: #f00;
+  animation-delay: 0.4s;
+}
+.snowball-start-54 {
   left: 1060px;
   animation-delay: 0.1s;
 }
-.snowball-55 {
+.snowball-end-54 {
+  background-color: #f00;
+  animation-delay: 0.1s;
+}
+.snowball-start-55 {
   left: 1080px;
   animation-delay: 0.6s;
 }
-.snowball-56 {
+.snowball-end-55 {
+  background-color: #f00;
+  animation-delay: 0.6s;
+}
+.snowball-start-56 {
   left: 1100px;
   animation-delay: 0.5s;
 }
-.snowball-57 {
+.snowball-end-56 {
+  background-color: #f00;
+  animation-delay: 0.5s;
+}
+.snowball-start-57 {
   left: 1120px;
   animation-delay: 0.4s;
 }
-.snowball-58 {
+.snowball-end-57 {
+  background-color: #f00;
+  animation-delay: 0.4s;
+}
+.snowball-start-58 {
   left: 1140px;
   animation-delay: 0.3s;
 }
-.snowball-59 {
+.snowball-end-58 {
+  background-color: #f00;
+  animation-delay: 0.3s;
+}
+.snowball-start-59 {
   left: 1160px;
   animation-delay: 0.2s;
 }
-.snowball-60 {
+.snowball-end-59 {
+  background-color: #f00;
+  animation-delay: 0.2s;
+}
+.snowball-start-60 {
   left: 1180px;
   animation-delay: 0.1s;
 }
-.snowball-61 {
+.snowball-end-60 {
+  background-color: #f00;
+  animation-delay: 0.1s;
+}
+.snowball-start-61 {
   left: 1200px;
   animation-delay: 0.6s;
 }
-.snowball-62 {
+.snowball-end-61 {
+  background-color: #f00;
+  animation-delay: 0.6s;
+}
+.snowball-start-62 {
   left: 1220px;
   animation-delay: 0.1s;
 }
-.snowball-63 {
+.snowball-end-62 {
+  background-color: #f00;
+  animation-delay: 0.1s;
+}
+.snowball-start-63 {
   left: 1240px;
   animation-delay: 0.2s;
 }
-.snowball-64 {
+.snowball-end-63 {
+  background-color: #f00;
+  animation-delay: 0.2s;
+}
+.snowball-start-64 {
   left: 1260px;
   animation-delay: 0.3s;
 }
-.snowball-65 {
+.snowball-end-64 {
+  background-color: #f00;
+  animation-delay: 0.3s;
+}
+.snowball-start-65 {
   left: 1280px;
   animation-delay: 0.4s;
 }
-@-moz-keyframes snowballRain {
+.snowball-end-65 {
+  background-color: #f00;
+  animation-delay: 0.4s;
+}
+@-moz-keyframes snowballStartRain {
   0% {
     opacity: 0;
   }
@@ -290,7 +554,7 @@ body {
     top: 100vh;
   }
 }
-@-webkit-keyframes snowballRain {
+@-webkit-keyframes snowballStartRain {
   0% {
     opacity: 0;
   }
@@ -305,7 +569,7 @@ body {
     top: 100vh;
   }
 }
-@-o-keyframes snowballRain {
+@-o-keyframes snowballStartRain {
   0% {
     opacity: 0;
   }
@@ -320,7 +584,7 @@ body {
     top: 100vh;
   }
 }
-@keyframes snowballRain {
+@keyframes snowballStartRain {
   0% {
     opacity: 0;
   }

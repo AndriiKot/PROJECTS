@@ -4,7 +4,7 @@ stepAnimationDelay = 0.5
 animationDelay = 0
 positionElementFirst = 0
 sizeSnowball = 10
-
+animationDelayEnd = 3
 
 size(n = sizeSnowball)
   width n px
@@ -18,7 +18,8 @@ body {
     position: relative;
 }
 
-[class|=snowball]{
+[class|=snowball-start] 
+[class|=snowball-end] {
     position absolute;
     top: 0;
     left: 0;
@@ -26,7 +27,11 @@ body {
     background: white
     border-radius: 50%
     opacity 0
-    animation snowballRain 1s infinite
+    animation snowballStartRain 3s infinite
+}
+
+[class|=snowball-end] {
+    animation-delay: 10s;
 }
 
 mixin-animation-delay(arg = 0)
@@ -35,15 +40,19 @@ mixin-animation-delay(arg = 0)
             return num * 0.1
 
 for num in (1..maxElements)
-    .snowball-{num}
+    .snowball-start-{num}
       left positionElementFirst px
-      animation-delay animationDelay s //mixin-animation-delay(num) s
+      animation-delay animationDelay s 
     positionElementFirst += stepDistance
     animationDelay = (mixin-animation-delay(num))
+    .snowball-end-{num}
+        background-color: red
+        animation-delay animationDelayEnd s
+    animationDelayEnd = (mixin-animation-delay(num))
 
 
 
-@keyframes snowballRain {
+@keyframes snowballStartRain {
     0% {
         opacity 0
         }
