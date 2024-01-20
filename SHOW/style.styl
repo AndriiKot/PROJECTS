@@ -30,8 +30,12 @@ body {
 }
 
 mixin-animation-delay(arg = 0)
-    if arg % 5 == 0
+    if arg % 6 == 0
       return 0.0
+    if arg % 5 == 0
+      return 0.1
+    if arg % 4 == 0
+      return 0.5
     return 0.3
 
 for num in (1..maxElements)
@@ -39,7 +43,7 @@ for num in (1..maxElements)
       left positionElementFirst px
       animation-delay animationDelay s //mixin-animation-delay(num) s
     positionElementFirst += stepDistance
-    animationDelay += (mixin-animation-delay(num))
+    animationDelay = (mixin-animation-delay(num))
 
 
 
