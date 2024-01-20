@@ -1,3 +1,5 @@
+*,
+box-sizing border-box,
 body {
   background-color: #335ea4;
   position: relative;
@@ -6,53 +8,203 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 200px;
-  height: 200px;
+  width: 10px;
+  height: 10px;
   background: #fff;
   border-radius: 50%;
 }
 .snowball-1 {
-  left: 20px;
+  left: 0px;
 }
 .snowball-2 {
-  left: 40px;
+  left: 20px;
 }
 .snowball-3 {
-  left: 60px;
+  left: 40px;
 }
 .snowball-4 {
-  left: 80px;
+  left: 60px;
 }
 .snowball-5 {
-  left: 100px;
+  left: 80px;
 }
 .snowball-6 {
-  left: 120px;
+  left: 100px;
 }
 .snowball-7 {
-  left: 140px;
+  left: 120px;
 }
 .snowball-8 {
-  left: 160px;
+  left: 140px;
 }
 .snowball-9 {
-  left: 180px;
+  left: 160px;
 }
 .snowball-10 {
-  left: 200px;
+  left: 180px;
 }
 .snowball-11 {
-  left: 220px;
+  left: 200px;
 }
 .snowball-12 {
-  left: 240px;
+  left: 220px;
 }
 .snowball-13 {
-  left: 260px;
+  left: 240px;
 }
 .snowball-14 {
-  left: 280px;
+  left: 260px;
 }
 .snowball-15 {
+  left: 280px;
+}
+.snowball-16 {
   left: 300px;
+}
+.snowball-17 {
+  left: 320px;
+}
+.snowball-18 {
+  left: 340px;
+}
+.snowball-19 {
+  left: 360px;
+}
+.snowball-20 {
+  left: 380px;
+}
+.snowball-21 {
+  left: 400px;
+}
+.snowball-22 {
+  left: 420px;
+}
+.snowball-23 {
+  left: 440px;
+}
+.snowball-24 {
+  left: 460px;
+}
+.snowball-25 {
+  left: 480px;
+}
+.snowball-26 {
+  left: 500px;
+}
+.snowball-27 {
+  left: 520px;
+}
+.snowball-28 {
+  left: 540px;
+}
+.snowball-29 {
+  left: 560px;
+}
+.snowball-30 {
+  left: 580px;
+}
+.snowball-31 {
+  left: 600px;
+}
+.snowball-32 {
+  left: 620px;
+}
+.snowball-33 {
+  left: 640px;
+}
+.snowball-34 {
+  left: 660px;
+}
+.snowball-35 {
+  left: 680px;
+}
+.snowball-36 {
+  left: 700px;
+}
+.snowball-37 {
+  left: 720px;
+}
+.snowball-38 {
+  left: 740px;
+}
+.snowball-39 {
+  left: 760px;
+}
+.snowball-40 {
+  left: 780px;
+}
+.snowball-41 {
+  left: 800px;
+}
+.snowball-42 {
+  left: 820px;
+}
+.snowball-43 {
+  left: 840px;
+}
+.snowball-44 {
+  left: 860px;
+}
+.snowball-45 {
+  left: 880px;
+}
+.snowball-46 {
+  left: 900px;
+}
+.snowball-47 {
+  left: 920px;
+}
+.snowball-48 {
+  left: 940px;
+}
+.snowball-49 {
+  left: 960px;
+}
+.snowball-50 {
+  left: 980px;
+}
+.snowball-51 {
+  left: 1000px;
+}
+.snowball-52 {
+  left: 1020px;
+}
+.snowball-53 {
+  left: 1040px;
+}
+.snowball-54 {
+  left: 1060px;
+}
+.snowball-55 {
+  left: 1080px;
+}
+.snowball-56 {
+  left: 1100px;
+}
+.snowball-57 {
+  left: 1120px;
+}
+.snowball-58 {
+  left: 1140px;
+}
+.snowball-59 {
+  left: 1160px;
+}
+.snowball-60 {
+  left: 1180px;
+}
+.snowball-61 {
+  left: 1200px;
+}
+.snowball-62 {
+  left: 1220px;
+}
+.snowball-63 {
+  left: 1240px;
+}
+.snowball-64 {
+  left: 1260px;
+}
+.snowball-65 {
+  left: 1280px;
 }

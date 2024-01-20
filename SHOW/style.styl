@@ -1,10 +1,15 @@
-maxElements = 15
+maxElements = 65
 step = 20
-positionElement = 0
+positionElementFirst = 0
+sizeSnowball = 10
 
-size(n)
-  width n  
-  height n 
+
+size(n = sizeSnowball)
+  width n px
+  height n px
+
+* 
+box-sizing border-box
 
 body {
     background-color: rgb(51, 94, 164);
@@ -15,13 +20,14 @@ body {
     position absolute;
     top: 0;
     left: 0;
-    size(200px)
+    size()
     background: white;
     border-radius: 50%;
 }
 
 for num in (1..maxElements)
-  positionElement += step
   .snowball-{num}
-    left positionElement px
+    left positionElementFirst px
+  positionElementFirst += step
+
     
