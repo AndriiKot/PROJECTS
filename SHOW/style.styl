@@ -1,6 +1,7 @@
 maxElements = 65
 stepDistance = 20
 animationDelay = 0
+animationDelayEnd = 0
 positionElementFirst = 0
 sizeSnowball = 10
 
@@ -43,8 +44,8 @@ for num in (1..maxElements)
     animationDelay = (mixin-animation-delay(num))
     .snowball-end-{num}
         background-color: red
-        animation-delay 2s
-    animationDelay = (mixin-animation-delay(num)) + 2 s
+        animation-delay animationDelay s
+    animationDelay = (mixin-animation-delay(num)) + 2.0
 
 
 @keyframes snowballStartRain {
