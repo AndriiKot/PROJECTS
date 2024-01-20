@@ -1,8 +1,7 @@
-
-*::before,
-*::after {
-	box-sizing: border-box;
-}
+maxElements = 15
+size(n)
+  width n  
+  height n 
 
 body {
     background-color: rgb(51, 94, 164);
@@ -13,15 +12,13 @@ body {
     position absolute;
     top: 0;
     left: 0;
-    height: 10px;
+    size(200px)
+    // width: 100px;
+    // height: 100px;
     background: white;
     border-radius: 50%;
 }
 
-create-snowflakes(arg = 1)
-    // sum = 0
-    // for i in (1..arg)
-    //     sum += 0.05
-    //     :hover div:nth-child({i})
-    //         transition-delay: sum 
-            
+for num in (1..maxElements)
+  .snowball-{num}
+    background-color red
