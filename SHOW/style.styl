@@ -29,17 +29,18 @@ body {
     animation snowballRain 3s infinite
 }
 
+mixin-animation-delay(arg = 0)
+    if arg % 5 == 0
+      return 0.0
+    return 0.3
+
 for num in (1..maxElements)
     .snowball-{num}
       left positionElementFirst px
       animation-delay animationDelay s //mixin-animation-delay(num) s
     positionElementFirst += stepDistance
-    animationDelay += stepAnimationDelay
+    animationDelay += (mixin-animation-delay(num))
 
-mixin-animation-delay()
-    if num % 5 == 0
-      return 0
-    return 0.3
 
 
 @keyframes snowballRain {
