@@ -30,13 +30,9 @@ body {
 }
 
 mixin-animation-delay(arg = 0)
-    if arg % 6 == 0
-      return 0.0
-    if arg % 5 == 0
-      return 0.1
-    if arg % 4 == 0
-      return 0.5
-    return 0.3
+    for num in (20..1)
+        if arg % num == 0
+            return num * 0.1
 
 for num in (1..maxElements)
     .snowball-{num}
