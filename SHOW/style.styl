@@ -26,11 +26,11 @@ body {
     background: white
     border-radius: 50%
     opacity 0
-    animation snowballRain 3s infinite
+    animation snowballRain 1s infinite
 }
 
 mixin-animation-delay(arg = 0)
-    for num in (20..1)
+    for num in (6..1)
         if arg % num == 0
             return num * 0.1
 
@@ -46,7 +46,6 @@ for num in (1..maxElements)
 @keyframes snowballRain {
     0% {
         opacity 0
-        top 0
         }
     30% {
         opacity 1
