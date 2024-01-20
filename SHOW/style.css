@@ -1,0 +1,89 @@
+body {
+  background-color: #335ea4;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+[class|=snowball-start],
+[class|=snowball-end] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 1;
+  animation: snowballStartRain 5s ease-in-out infinite;
+}
+.snowball-start-1,
+.snowball-end-1 {
+  left: 0px;
+}
+.snowball-start-1 {
+  animation-delay: 0s;
+}
+.snowball-end-1 {
+  background-color: #f00;
+  animation-delay: 0.1s;
+}
+@-moz-keyframes snowballStartRain {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 90vh;
+  }
+}
+@-webkit-keyframes snowballStartRain {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 90vh;
+  }
+}
+@-o-keyframes snowballStartRain {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 90vh;
+  }
+}
+@keyframes snowballStartRain {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 90vh;
+  }
+}
