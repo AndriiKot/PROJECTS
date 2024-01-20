@@ -1,7 +1,10 @@
 maxElements = 65
 stepDistance = 20
 stepAnimationDelay = 0.5
-animationDelay = 0
+animationDelay5 = 0
+animationDelay4 = 0
+animationDelay3 = 0
+animationDelay2 = 0
 positionElementFirst = 0
 sizeSnowball = 10
 
@@ -26,7 +29,7 @@ body {
     background: white
     border-radius: 50%
     opacity 0
-    animation snowballRain .5s infinite
+    animation snowballRain 3s infinite
 }
 
 for num in (1..maxElements)
@@ -34,7 +37,15 @@ for num in (1..maxElements)
     left positionElementFirst px
     animation-delay animationDelay s
   positionElementFirst += stepDistance
-  animationDelay += stepAnimationDelay
+  if num % 5 == 0
+    animationDelay5 += stepAnimationDelay 
+  if num % 4 == 0
+    animationDelay4 += (stepAnimationDelay + 0.2)
+  if num % 3 == 0
+    animationDelay3 += (stepAnimationDelay + 0.3)
+  if num % 2 == 0
+    animationDelay2 += (stepAnimationDelay + 0.5)
+
 
 @keyframes snowballRain {
     0% {
