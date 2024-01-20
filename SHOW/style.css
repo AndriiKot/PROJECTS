@@ -25,7 +25,18 @@ body {
 }
 .snowball-end-1 {
   background-color: #f00;
+  animation-delay: 2s;
+}
+.snowball-start-2,
+.snowball-end-2 {
+  left: 20px;
+}
+.snowball-start-2 {
   animation-delay: 0.1s;
+}
+.snowball-end-2 {
+  background-color: #f00;
+  animation-delay: 2.1s;
 }
 @-moz-keyframes snowballStartRain {
   0% {
