@@ -22,9 +22,14 @@ body {
     size()
     background: white
     border-radius: 50%
-    opacity 1
-    animation snowballStartRain 5s infinite
+    opacity 0
+    animation snowballStartRain 4s infinite
+    transition: opacity 3s
 }
+
+[class|=snowball-end]
+    animation snowballStartRainTest 4s infinite   
+
 
 random(min,max)
   return floor(math(0, 'random')*(max - min + 1) + min)
@@ -32,7 +37,7 @@ random(min,max)
 
 mixin-animation-delay(arg = 0)
         if arg % 10 == 0
-            return 1.5 * random(1, 100) * 0.01
+            return 0.0
         if arg % 9 == 0
             return  4 * random(5, 100) * 0.01
         if arg % 8 == 0
@@ -50,7 +55,7 @@ mixin-animation-delay(arg = 0)
         if arg % 2 == 0
             return  5.5 * random(1, 100) * 0.01
         if arg % 1 == 0
-            return  random(1, 100) * 0.01
+            return  1.5 * random(1, 100) * 0.01
     
 
 animationDelayStart = 0
@@ -65,7 +70,6 @@ for num in (1..maxElements)
       animation-delay animationDelayStart s
     animationDelayStart = (mixin-animation-delay(num))
     .snowball-end-{num}
-        background-color: red
         animation-delay animationDelayEnd + (2 * random(1,10) * 0.1) s
     animationDelayEnd = mixin-animation-delay(num) 
 
@@ -75,7 +79,32 @@ for num in (1..maxElements)
         opacity 0
         }
     30% {
+        opacity 0.7
+        }
+    50% {
         opacity 1
+        }
+    70% {
+        opacity 0.7
+        }
+    100% {
+        opacity 0
+        top: 90vh
+        }
+}
+
+@keyframes snowballStartRainTest {
+    0% {
+        opacity 0
+        }
+    20% {
+        opacity 0.8
+        }
+    30% {
+        opacity .5
+        }
+    50% {
+        opacity .7
         }
     70% {
         opacity 1
@@ -85,5 +114,4 @@ for num in (1..maxElements)
         top: 90vh
         }
 }
-
-    
+  
