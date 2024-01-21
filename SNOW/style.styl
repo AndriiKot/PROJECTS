@@ -27,9 +27,6 @@ body {
     box-shadow 0 0 5px 3px rgba(255, 255, 255, .75)
 }
 
-[class|=snowball-end]
-    animation snowballStartRainTest 4s infinite   
-
 
 random(min,max)
   return floor(math(0, 'random')*(max - min + 1) + min)
@@ -76,12 +73,12 @@ for num in (1..maxElements)
     .snowball-end-{num}        
         left (positionElementFirst + 10) px
         animation-delay animationDelayEnd + (3.5 * random(1,100) * 0.01) s
-      if num % 2 == 0
-        animation-duration 2.5s
-        animation-name snowballStartRainFast
-      if num % 3 == 0
-        animation-duration 5s
-        animation-name snowballStartRainSlow
+        if num % 2 == 0
+          animation-duration 2.5s
+          animation-name snowballStartRainFast
+        if num % 3 == 0
+          animation-duration 5s
+          animation-name snowballStartRainSlow
     animationDelayEnd = mixin-animation-delay(num) 
 
 
@@ -140,7 +137,7 @@ for num in (1..maxElements)
         }
 }
 
-@keyframes snowballStartRainTest {
+@keyframes snowballStartRainEnd {
     0% {
         opacity 0
         }
@@ -161,4 +158,5 @@ for num in (1..maxElements)
         top: 90vh
         }
 }
+
   
