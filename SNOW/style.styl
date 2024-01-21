@@ -23,8 +23,8 @@ body {
     background: white
     border-radius: 50%
     opacity 0
-    animation snowballStartRain 4s infinite
-    transition: opacity 3s
+    animation snowballStartRain 4s infinite;
+    box-shadow 0 0 5px 3px rgba(255, 255, 255, .75)
 }
 
 [class|=snowball-end]
@@ -41,7 +41,7 @@ mixin-animation-delay(arg = 0)
         if arg % 9 == 0
             return  4 * random(5, 100) * 0.01
         if arg % 8 == 0
-            return  2.5 * random(1,100) * 0.01
+            return  5.5 * random(1,100) * 0.01
         if arg % 7 == 0
             return  1 * random(1, 100) * 0.01
         if arg % 6 == 0
@@ -49,11 +49,11 @@ mixin-animation-delay(arg = 0)
         if arg % 5 == 0
             return  5 * random(1, 100) * 0.01
         if arg % 4 == 0
-            return  4.5 * random(1, 100) * 0.01
+            return  7 * random(1, 100) * 0.01
         if arg % 3 == 0
             return  3 * random(1, 100) * 0.01
         if arg % 2 == 0
-            return  5.5 * random(1, 100) * 0.01
+            return  7.5 * random(1, 100) * 0.01
         if arg % 1 == 0
             return  1.5 * random(1, 100) * 0.01
     
@@ -63,14 +63,25 @@ animationDelayEnd = 0
 
 for num in (1..maxElements)
     .snowball-start-{num}
-    .snowball-end-{num}
       left positionElementFirst px
-    positionElementFirst += stepDistance
-    .snowball-start-{num}
       animation-delay animationDelayStart s
+      if num % 2 == 0
+        animation-duration 3.5s
+        animation-name snowballStartRainFast
+      if num % 3 == 0
+        animation-duration 5.5s
+        animation-name snowballStartRainSlow
+    positionElementFirst += stepDistance
     animationDelayStart = (mixin-animation-delay(num))
-    .snowball-end-{num}
-        animation-delay animationDelayEnd + (2 * random(1,10) * 0.1) s
+    .snowball-end-{num}        
+        left (positionElementFirst + 10) px
+        animation-delay animationDelayEnd + (3.5 * random(1,100) * 0.01) s
+      if num % 2 == 0
+        animation-duration 2.5s
+        animation-name snowballStartRainFast
+      if num % 3 == 0
+        animation-duration 5s
+        animation-name snowballStartRainSlow
     animationDelayEnd = mixin-animation-delay(num) 
 
 
@@ -89,6 +100,42 @@ for num in (1..maxElements)
         }
     100% {
         opacity 0
+        top: 90vh
+        }
+}
+@keyframes snowballStartRainFast {
+    0% {
+        opacity 0.2
+        }
+    30% {
+        opacity 0.7
+        }
+    50% {
+        opacity 1
+        }
+    70% {
+        opacity 0.7
+        }
+    100% {
+        opacity 0.1
+        top: 90vh
+        }
+}
+@keyframes snowballStartRainSlow {
+    0% {
+        opacity 0
+        }
+    30% {
+        opacity .5
+        }
+    50% {
+        opacity .7
+        }
+    70% {
+        opacity .45
+        }
+    100% {
+        opacity 0.1
         top: 90vh
         }
 }
