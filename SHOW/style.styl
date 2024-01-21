@@ -26,13 +26,28 @@ body {
     animation snowballStartRain 3s ease-in-out infinite
 }
 
+random(min,max)
+  return floor(math(0, 'random')*(max - min + 1) + min)
+
 
 mixin-animation-delay(arg = 0)
-    for num in (7..1)
-        if arg % num == 0
-            if arg % 2 == 0
-                return  num + 3.0
-        return num 
+        if arg % 8 == 0
+            return  2 * random(1,10) * 0.1
+        if arg % 7 == 0
+            return  7 * random(1, 10) * 0.1
+        if arg % 6 == 0
+            return  4 * random(1, 10) * 0.1
+        if arg % 5 == 0
+            return  1 * random(1, 10) * 0.1
+        if arg % 4 == 0
+            return  3 * random(1, 10) * 0.1
+        if arg % 3 == 0
+            return  6 * random(1, 10) * 0.1
+        if arg % 2 == 0
+            return  5 * random(1, 10) * 0.1
+        if arg % 1 == 0
+            return  random(1, 10) * 0.1
+    
 
 animationDelayStart = 0
 animationDelayEnd = 0
