@@ -1,0 +1,21 @@
+﻿*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+
+.wrapper__rating-stars {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+[class|=rating-stars__star-]:checked ~{
+
+}
