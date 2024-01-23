@@ -15,16 +15,21 @@
 - var n_back_back_right = 0
 - var maxElements = 35
 
-mixin snowballCreationElementsDiv(maxIteration,className,classNamesArray = [])
-    - var start_integer = 0
-    - var layer = classNamesArray.length
-    while start_integer++ < maxIteration 
-        h1= start_integer 
-        h2= layer
-        //- div(class='snowball-start-' + n_start)
+-const frontSnowball = ['front-start','front-end']
+-const backSnowball = ['back-start-left','back-start-right']
+-const lastSnowball = ['last-start','last-end']
+-const arrayClassNamesAllSnowball = [frontSnowball,backSnowball,lastSnowball]
 
-    
-+snowballCreationElementsDiv(2)
+
+mixin snowballCreationElementsDiv(maxIteration,classNameMain,classNamesArray = [])
+    - let start_integer = 0
+    - let layer = classNamesArray.length
+    while start_integer++ < layer
+        h1= classNamesArray
+        while start_integer++ < maxIteration 
+            h1= start_integer 
+  
++snowballCreationElementsDiv(2,'name',arrayClassNamesAllSnowball)
 
 while n_start++ < maxElements 
     div(class='snowball-start-' + n_start)
