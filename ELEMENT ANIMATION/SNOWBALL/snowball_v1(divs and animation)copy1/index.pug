@@ -15,10 +15,12 @@
 - var n_back_back_right = 0
 - var maxElements = 35
 
-mixin snowballCreationElementsDiv(maxIteration)
+mixin snowballCreationElementsDiv(maxIteration,className,classNamesArray = [])
     - var start_integer = 0
+    - var layer = classNamesArray.length
     while start_integer++ < maxIteration 
         h1= start_integer 
+        h2= layer
         //- div(class='snowball-start-' + n_start)
 
     
