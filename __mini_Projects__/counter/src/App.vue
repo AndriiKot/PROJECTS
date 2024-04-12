@@ -22,12 +22,7 @@ export default {
 
 <style>
 .App {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
-
+  
   h1 {
     color: var(--color-4);
     font-size: 7rem;
