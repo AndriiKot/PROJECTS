@@ -1,7 +1,7 @@
 ﻿<template>
   <div class="wrapper">
-    <h2>Counter:</h2>
-    <h1>{{ counter }}</h1>
+    <h2 class="title">Counter:</h2>
+    <h1 class="counter">{{ counter }}</h1>
     <button @:click="counter--" className="minus">- Minus</button>
     <button @:click="counter++" className="plus">Plus +</button>
   </div>
@@ -20,7 +20,7 @@ export default {
 
 <style>
 .wrapper {
-  h1 {
+  & .counter {
     color: var(--color-4);
     font-size: 7rem;
     margin: 0;
@@ -33,13 +33,14 @@ export default {
     }
   }
 
-  h2 {
+  & .title {
     font-size: 2rem;
     margin: 0;
     color: var(--color-3);
   }
 
-  button {
+  & button {
+    position: relative;
     background: transparent;
     border: 2px solid transparent;
     text-align: center;
@@ -47,14 +48,32 @@ export default {
     border-radius: 15px;
     padding: 10px 25px;
     cursor: pointer;
+    width: 43%;
+    aspect-ratio: 7/1;
+
     margin: 0 10px;
     transition: all 0.05s ease-in-out;
-
+    & .square {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      pointer-events: none;
+      height: 50%;
+      aspect-ratio: 1;
+      padding: 0;
+      z-index: -1;
+      border-radius: 15%;
+    }
     &.minus {
       background-color: var(--color-2);
       color: #fff;
       box-shadow: 0 4px 0 darken(var(--color-2), 10%);
       border: 1px solid darken(var(--color-2), 15%);
+      & .square {
+        background-color: var(--color-2);
+        animation: animate-minus 2s linear forwards;
+      }
     }
 
     &.plus {
@@ -62,6 +81,10 @@ export default {
       color: #fff;
       box-shadow: 0 4px 0 darken(var(--color-1), 10%);
       border: 1px solid darken(var(--color-1), 15%);
+      & .square {
+        background-color: var(--color-1);
+        animation: animate-plus 2s linear forwards;
+      }
     }
 
     &:hover {
