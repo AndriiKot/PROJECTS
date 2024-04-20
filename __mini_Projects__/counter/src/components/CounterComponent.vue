@@ -1,0 +1,77 @@
+﻿<template>
+  <div class="wrapper">
+    <h2>Counter:</h2>
+    <h1>{{ counter }}</h1>
+    <button @:click="counter--" className="minus">- Minus</button>
+    <button @:click="counter++" className="plus">Plus +</button>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "CounterComponent",
+  data() {
+    return {
+      counter: 0,
+    };
+  },
+};
+</script>
+
+<style>
+.wrapper {
+  h1 {
+    color: var(--color-4);
+    font-size: 7rem;
+    margin: 0;
+    margin-bottom: 20px;
+    &.plus {
+      color: var(--color-1);
+    }
+    &.minus {
+      color: var(--color-2);
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 0;
+    color: var(--color-3);
+  }
+
+  button {
+    background: transparent;
+    border: 2px solid transparent;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 15px;
+    padding: 10px 25px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all 0.05s ease-in-out;
+
+    &.minus {
+      background-color: var(--color-2);
+      color: #fff;
+      box-shadow: 0 4px 0 darken(var(--color-2), 10%);
+      border: 1px solid darken(var(--color-2), 15%);
+    }
+
+    &.plus {
+      background-color: var(--color-1);
+      color: #fff;
+      box-shadow: 0 4px 0 darken(var(--color-1), 10%);
+      border: 1px solid darken(var(--color-1), 15%);
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(2px);
+      box-shadow: none;
+    }
+  }
+}
+</style>
