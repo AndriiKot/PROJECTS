@@ -1,7 +1,0 @@
-﻿
-1. 
-  5 + undefined  // NaN
-  undefined + 5  // NaN
-  
-  3 + null       // 3
-  null + 4       // 4

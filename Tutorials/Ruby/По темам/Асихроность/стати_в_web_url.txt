@@ -1,3 +1,0 @@
-﻿
-Async Ruby libr = https://brunosutic.com/blog/async-ruby
-
