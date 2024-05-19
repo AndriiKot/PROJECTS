@@ -1,5 +1,9 @@
 ﻿update VanilaJS:
 git subtree pull --prefix  VanillaJS https://github.com/AndriiKot/VanillaJS.git main
 
+update React:
+git subtree add --prefix React https://github.com/AndriiKot/React.git main
+
+
 
 
