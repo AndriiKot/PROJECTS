@@ -1,0 +1,5 @@
+﻿update VanilaJS:
+git subtree pull --prefix  VanillaJS https://github.com/AndriiKot/VanillaJS.git main
+
+
+
