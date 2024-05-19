@@ -1,1 +1,1 @@
-﻿import "./src/assets/testing_.css";
+﻿import "./src/assets/testing_.scss";
