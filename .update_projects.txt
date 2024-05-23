@@ -2,10 +2,15 @@
 git subtree pull --prefix  VanillaJS https://github.com/AndriiKot/VanillaJS.git main
 
 update React:
-git subtree add --prefix React https://github.com/AndriiKot/React.git main
+git subtree pull --prefix React https://github.com/AndriiKot/React.git main
 
 update Vue:
-git subtree add --prefix Vue https://github.com/AndriiKot/Vue.git main
+git subtree pull --prefix Vue https://github.com/AndriiKot/Vue.git main
+
+update CSS:
+git subtree pull --prefix CSS https://github.com/AndriiKot/CSS.git main
+
+
 
 
 
