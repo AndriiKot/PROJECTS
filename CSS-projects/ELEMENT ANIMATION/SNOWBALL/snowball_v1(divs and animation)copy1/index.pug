@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Snowing</title>
+</head>
+<body>
+
+- var n_start = 0
+- var n_end = 0
+- var n_back = 0
+- var n_back_back = 0
+- var n_back_back_right = 0
+- var maxElements = 35
+
+// New Code 'Solid'
+-const classNameMain = 'snowball-'
+
+-const frontSnowball = ['front-start-','front-end-']
+-const backSnowball = ['back-start-left-','back-start-right-']
+-const lastSnowball = ['last-start-','last-end-']
+
+// number of elements
+-const frontNumber = 35
+-const backNumber = 70
+-const lastNumber = 50
+
+
+mixin snowballCreationElementsDiv(classNameMain, maxIteration,snowballLayerArray = [])
+        each layer in snowballLayerArray 
+            - let start_integer = 0
+                while start_integer++ < maxIteration 
+                    div(class= classNameMain + layer + start_integer)
+
+  
++snowballCreationElementsDiv(classNameMain,frontNumber,frontSnowball)
++snowballCreationElementsDiv(classNameMain,backNumber,backSnowball)
++snowballCreationElementsDiv(classNameMain,lastNumber,lastSnowball)
+
+// Old code 
+while n_start++ < maxElements 
+    div(class='snowball-start-' + n_start)
+
+while n_end++ < maxElements 
+    div(class='snowball-end-' + n_end)
+
+while n_back++ < maxElements 
+    div(class='snowball-back-' + n_back)
+
+while n_back_back++ < maxElements 
+    div(class='snowball-back-back-' + n_back_back)
+
+while n_back_back_right++ < maxElements 
+    div(class='snowball-back-back-right-' + n_back_back_right)
+
+</body>
+</html>
