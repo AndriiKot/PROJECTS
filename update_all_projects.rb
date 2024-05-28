@@ -1,5 +1,5 @@
 ﻿projects = {
- CSS: 'https://github.com/AndriiKot/CSS.git',
+ Loading: 'https://github.com/AndriiKot/CSS.git',
 }
 
 update = "git subtree pull --prefix "
