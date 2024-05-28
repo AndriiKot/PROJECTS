@@ -3,15 +3,28 @@
 *::after {
   box-sizing: border-box;
 }
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px; /* remove scrollbar space */
+  background: transparent; /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #f00;
+}
 body {
   background: #282c4d;
 }
 body .container {
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-body .container span {
+body .container div {
   color: rgba(255,255,128,0.7);
   font-size: 4em;
   font-family: 'Arial';
