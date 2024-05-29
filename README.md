@@ -7,6 +7,9 @@
     <img src="https://raw.githubusercontent.com/stylus/stylus/logo.png" alt="Stylus logo" >
 </div>
 
+ <img src="https://raw.githubusercontent.com/stylus/stylus/logo.png" alt="Stylus logo" >
+
+
 ![Text Animation RotateY 360deg](./__title__/text_animation_rotateY_360deg_img.jpg)
 
 <video width="320" height="240" autoplay loop>
