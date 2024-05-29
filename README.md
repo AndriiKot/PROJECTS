@@ -8,7 +8,7 @@
 </div>
 
  <img src="https://www.stylus-lang.com/assets/img/stylus-logo.svg" alt="Stylus logo" >
-
+<img src="https://designer-hub.com.ua/wp-content/uploads/2021/03/stylus_logo.jpg" alt="Stylus logo" >
 
 ![Text Animation RotateY 360deg](./__title__/text_animation_rotateY_360deg_img.jpg)
 
