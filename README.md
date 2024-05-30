@@ -18,4 +18,4 @@
 
 #### Demo
 
-![Text Animation 'LOADING'](./___title___/)
+![Text Animation 'LOADING'](./___title___/text_animation__LOADING__igm__.png)
