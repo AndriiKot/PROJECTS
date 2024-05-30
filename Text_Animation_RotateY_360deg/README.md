@@ -18,3 +18,5 @@
 #### Demo
 
 ![Text Animation RotateY 360deg](./___title___/text_animation_rotateY_360deg_img.jpg)
+![Text Animation RotateY 360deg](./___title___/test_animation_rotateY_360deg_start_img.png)
+
