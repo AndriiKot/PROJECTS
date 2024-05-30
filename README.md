@@ -3,14 +3,14 @@
 #### Technologies
 
 <div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg" alt="CSS Logo" width="100"            height="100">
+
   <a href="https://html.spec.whatwg.org/multipage/">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5 logo" 
-       width="100" height="100">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5 logo" 
+    width="100" height="100">
+
   </a>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg" alt="CSS Logo" width="100"           height="100">
-
     <img src="https://stylus-lang.com/logo.svg" alt="Stylus logo" width="100" height="100" >
-
 </div>
 
 #### Demo
