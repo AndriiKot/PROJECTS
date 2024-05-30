@@ -17,7 +17,7 @@
 
 #### Demo
 
-![Text Animation RotateY 360deg](./__title__/text_animation_rotateY_360deg_img.jpg)
+![Text Animation RotateY 360deg](./___title___/text_animation_rotateY_360deg_img.jpg)
 
 <video width="320" height="240" autoplay loop>
   <source src="./__title__/Text_Animation_RotateY_369deg_video.mp4" type="video/mp4">
