@@ -17,7 +17,7 @@
 
 ## Projects
 
-#### Loading
+#### [Loading](https://github.com/AndriiKot/Loading)
 
 <div>
   <a href="https://github.com/AndriiKot/Loading"  target="_blank">
@@ -27,7 +27,7 @@
 </div>
 
 
-#### Text Animation Rotate Y 360deg
+#### [Text Animation Rotate Y 360deg](https://github.com/AndriiKot/Text_RotateY_360deg_)
 
 <div>
   <a href="https://github.com/AndriiKot/Text_RotateY_360deg_"  target="_blank">
