@@ -15,11 +15,23 @@
   </a>
 </div>
 
+## Projects
+
 #### Loading
 
 <div>
-  <a href="https://github.com/AndriiKot/Loading/blob/main/___title___/text_animation__LOADING__igm__.png"         target="_blank">
+  <a href="https://github.com/AndriiKot/Loading"  target="_blank">
   <img src='https://github.com/AndriiKot/Loading/blob/main/___title___/text_animation__LOADING__igm__.png' 
   alt="Text Animation 'LOADING">
+  </a>
+</div>
+
+
+#### Text Animation Rotate Y 360deg
+
+<div>
+  <a href="https://github.com/AndriiKot/Text_RotateY_360deg_"  target="_blank">
+  <img src='https://github.com/AndriiKot/Text_RotateY_360deg_/blob/main/___title___/test_animation_rotateY_360deg_start_img.png' 
+  alt="Text Animation Rotate Y 360deg">
   </a>
 </div>
