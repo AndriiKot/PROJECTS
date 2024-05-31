@@ -17,4 +17,4 @@
 
 
 #### Loading
-![Text Animation 'LOADING'](./___title___/text_animation__LOADING__igm__.png)
+![Text Animation 'LOADING']('https://github.com/AndriiKot/Loading/blob/main/___title___/text_animation__LOADING__igm__.png')
