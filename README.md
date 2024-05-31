@@ -15,6 +15,11 @@
   </a>
 </div>
 
-
 #### Loading
-![Text Animation 'LOADING']('https://github.com/AndriiKot/Loading/blob/main/___title___/text_animation__LOADING__igm__.png')
+
+<div>
+  <a href="https://github.com/AndriiKot/Loading/blob/main/___title___/text_animation__LOADING__igm__.png"         target="_blank">
+  <img src='https://github.com/AndriiKot/Loading/blob/main/___title___/text_animation__LOADING__igm__.png' 
+  alt="Text Animation 'LOADING">
+  </a>
+</div>
