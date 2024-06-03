@@ -1,4 +1,4 @@
-﻿/Vue/update_all_projects.rb
+﻿Vue/update_all_projects.rb
 .vagrant
 node_modules
 *.log
