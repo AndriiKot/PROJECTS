@@ -1,5 +1,4 @@
-﻿Vue/update_all_projects.rb
-.vagrant
+﻿.vagrant
 node_modules
 *.log
 .DS_Store
