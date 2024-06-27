@@ -2,14 +2,14 @@ import "./App.css";
 import CardsList from "./Card/CardsList";
 import Loading from "./Loading/Loading";
 import FetchPosts from "./FetchPosts/FetchPosts";
+import { useQuery } from "react-query";
 
 function App() {
-  const [posts, loading, error] = FetchPosts();
-
-  if (loading) {
+  const { data: posts, isLoading, isError } = useQuery("posts", FetchPosts);
+  if (isLoading) {
     return <Loading />;
   }
-  if (error) {
+  if (isError) {
     return <p>Error: {error.message}</p>;
   }
 
