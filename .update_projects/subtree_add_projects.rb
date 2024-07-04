@@ -1,4 +1,6 @@
-﻿pull = "git subtree pull --prefix "
+﻿require_relative 'config'
+
+pull = "git subtree add --prefix "
 
 Dir.chdir("..")
 
