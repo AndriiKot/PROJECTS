@@ -1,0 +1,1677 @@
+body {
+  background-color: #335ea4;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+[class|=snowball-start],
+[class|=snowball-end],
+[class|=snowball-back] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0;
+  animation: snowballStartRain 4s infinite;
+  box-shadow: 0 0 5px 3px rgba(255,255,255,0.75);
+}
+[class|=snowball-back] {
+  width: 5px;
+  height: 5px;
+}
+[class|=snowball-back-back] {
+  width: 3px;
+  height: 3px;
+}
+[class|=snowball-back-back-right] {
+  width: 3px;
+  height: 3px;
+}
+.snowball-start-1 {
+  left: 0px;
+  animation-delay: 0s;
+  transition-timing-function: linear;
+}
+.snowball-end-1 {
+  left: 50px;
+  animation-delay: 0.665s;
+}
+.snowball-back-1 {
+  left: 45px;
+  animation-delay: 2.415s;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-1 {
+  left: 43px;
+  animation-delay: 2.755s;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-1 {
+  left: 47px;
+  animation-delay: 2.545s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-2 {
+  left: 40px;
+  animation-delay: 0.87s;
+  animation-duration: 3.5s;
+  animation-name: snowballStartRainFast;
+  transition-timing-function: ease;
+}
+.snowball-end-2 {
+  left: 90px;
+  animation-delay: 1.25s;
+  animation-duration: 2.5s;
+  animation-name: snowballStartRainFast;
+}
+.snowball-back-2 {
+  left: 85px;
+  animation-delay: 0.725s;
+  animation-duration: 5s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-2 {
+  left: 83px;
+  animation-delay: 6.725000000000001s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-2 {
+  left: 87px;
+  animation-delay: 7.635000000000001s;
+  animation-duration: 6.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-3 {
+  left: 80px;
+  animation-delay: 5.55s;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainSlow;
+  transition-timing-function: ease-out;
+}
+.snowball-end-3 {
+  left: 130px;
+  animation-delay: 3.905s;
+  animation-duration: 5s;
+  animation-name: snowballStartRainSlow;
+}
+.snowball-back-3 {
+  left: 125px;
+  animation-delay: 2.575s;
+  animation-duration: 6s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-3 {
+  left: 123px;
+  animation-delay: 0.365s;
+  animation-duration: 8s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-3 {
+  left: 127px;
+  animation-delay: 2.36s;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-4 {
+  left: 120px;
+  animation-delay: 2.25s;
+  animation-duration: 3.5s;
+  animation-name: snowballStartRainFast;
+  transition-timing-function: ease-in;
+}
+.snowball-end-4 {
+  left: 170px;
+  animation-delay: 4.57s;
+  animation-duration: 2.5s;
+  animation-name: snowballStartRainFast;
+}
+.snowball-back-4 {
+  left: 165px;
+  animation-delay: 4.57s;
+  animation-duration: 5s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-4 {
+  left: 163px;
+  animation-delay: 6.720000000000001s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-4 {
+  left: 167px;
+  animation-delay: 7.945s;
+  animation-duration: 6.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-5 {
+  left: 160px;
+  animation-delay: 0.49s;
+  transition-timing-function: ease-in-out;
+}
+.snowball-end-5 {
+  left: 210px;
+  animation-delay: 5.109999999999999s;
+}
+.snowball-back-5 {
+  left: 205px;
+  animation-delay: 3.395s;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-5 {
+  left: 203px;
+  animation-delay: 2.56s;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-5 {
+  left: 207px;
+  animation-delay: 3.68s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-6 {
+  left: 200px;
+  animation-delay: 2.8s;
+  animation-duration: 3.5s;
+  animation-name: snowballStartRainFast;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainSlow;
+  transition-timing-function: ease-out;
+}
+.snowball-end-6 {
+  left: 250px;
+  animation-delay: 1.665s;
+  animation-duration: 2.5s;
+  animation-name: snowballStartRainFast;
+  animation-duration: 5s;
+  animation-name: snowballStartRainSlow;
+}
+.snowball-back-6 {
+  left: 245px;
+  animation-delay: 2.33s;
+  animation-duration: 5s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 6s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-6 {
+  left: 243px;
+  animation-delay: 0.805s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 8s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-6 {
+  left: 247px;
+  animation-delay: 2.625s;
+  animation-duration: 6.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-7 {
+  left: 240px;
+  animation-delay: 0.84s;
+  transition-timing-function: linear;
+}
+.snowball-end-7 {
+  left: 290px;
+  animation-delay: 3.815s;
+}
+.snowball-back-7 {
+  left: 285px;
+  animation-delay: 5.425000000000001s;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-7 {
+  left: 283px;
+  animation-delay: 3.63s;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-7 {
+  left: 287px;
+  animation-delay: 1.88s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-8 {
+  left: 280px;
+  animation-delay: 0.32s;
+  animation-duration: 3.5s;
+  animation-name: snowballStartRainFast;
+  transition-timing-function: ease-in;
+}
+.snowball-end-8 {
+  left: 330px;
+  animation-delay: 3.21s;
+  animation-duration: 2.5s;
+  animation-name: snowballStartRainFast;
+}
+.snowball-back-8 {
+  left: 325px;
+  animation-delay: 1.915s;
+  animation-duration: 5s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-8 {
+  left: 323px;
+  animation-delay: 6.495s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-8 {
+  left: 327px;
+  animation-delay: 4.325s;
+  animation-duration: 6.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-9 {
+  left: 320px;
+  animation-delay: 3.96s;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainSlow;
+  transition-timing-function: ease-out;
+}
+.snowball-end-9 {
+  left: 370px;
+  animation-delay: 2.07s;
+  animation-duration: 5s;
+  animation-name: snowballStartRainSlow;
+}
+.snowball-back-9 {
+  left: 365px;
+  animation-delay: 2.21s;
+  animation-duration: 6s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-9 {
+  left: 363px;
+  animation-delay: 2.63s;
+  animation-duration: 8s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-9 {
+  left: 367px;
+  animation-delay: 3.47s;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-10 {
+  left: 360px;
+  animation-delay: 2.32s;
+  animation-duration: 3.5s;
+  animation-name: snowballStartRainFast;
+  transition-timing-function: ease-in-out;
+}
+.snowball-end-10 {
+  left: 410px;
+  animation-delay: 1.915s;
+  animation-duration: 2.5s;
+  animation-name: snowballStartRainFast;
+}
+.snowball-back-10 {
+  left: 405px;
+  animation-delay: 2.51s;
+  animation-duration: 5s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-10 {
+  left: 403px;
+  animation-delay: 0.455s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-10 {
+  left: 407px;
+  animation-delay: 2.905s;
+  animation-duration: 6.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-11 {
+  left: 400px;
+  animation-delay: 0s;
+  transition-timing-function: linear;
+}
+.snowball-end-11 {
+  left: 450px;
+  animation-delay: 2.87s;
+}
+.snowball-back-11 {
+  left: 445px;
+  animation-delay: 0.7s;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-11 {
+  left: 443px;
+  animation-delay: 2.605s;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-11 {
+  left: 447px;
+  animation-delay: 2.675s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-12 {
+  left: 440px;
+  animation-delay: 1.29s;
+  animation-duration: 3.5s;
+  animation-name: snowballStartRainFast;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainSlow;
+  transition-timing-function: ease-in;
+}
+.snowball-end-12 {
+  left: 490px;
+  animation-delay: 2.24s;
+  animation-duration: 2.5s;
+  animation-name: snowballStartRainFast;
+  animation-duration: 5s;
+  animation-name: snowballStartRainSlow;
+}
+.snowball-back-12 {
+  left: 485px;
+  animation-delay: 3.535s;
+  animation-duration: 5s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 6s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-12 {
+  left: 483px;
+  animation-delay: 3.815s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 8s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-12 {
+  left: 487px;
+  animation-delay: 4.83s;
+  animation-duration: 6.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-13 {
+  left: 480px;
+  animation-delay: 1.575s;
+  transition-timing-function: linear;
+}
+.snowball-end-13 {
+  left: 530px;
+  animation-delay: 3.85s;
+}
+.snowball-back-13 {
+  left: 525px;
+  animation-delay: 1.645s;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-13 {
+  left: 523px;
+  animation-delay: 0.59s;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-13 {
+  left: 527px;
+  animation-delay: 2.48s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-14 {
+  left: 520px;
+  animation-delay: 0.915s;
+  animation-duration: 3.5s;
+  animation-name: snowballStartRainFast;
+  transition-timing-function: ease;
+}
+.snowball-end-14 {
+  left: 570px;
+  animation-delay: 1.66s;
+  animation-duration: 2.5s;
+  animation-name: snowballStartRainFast;
+}
+.snowball-back-14 {
+  left: 565px;
+  animation-delay: 0.54s;
+  animation-duration: 5s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-14 {
+  left: 563px;
+  animation-delay: 2.995s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-14 {
+  left: 567px;
+  animation-delay: 2.225s;
+  animation-duration: 6.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-15 {
+  left: 560px;
+  animation-delay: 0.86s;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainSlow;
+  transition-timing-function: ease-in-out;
+}
+.snowball-end-15 {
+  left: 610px;
+  animation-delay: 3.075s;
+  animation-duration: 5s;
+  animation-name: snowballStartRainSlow;
+}
+.snowball-back-15 {
+  left: 605px;
+  animation-delay: 2.095s;
+  animation-duration: 6s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-15 {
+  left: 603px;
+  animation-delay: 1.91s;
+  animation-duration: 8s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-15 {
+  left: 607px;
+  animation-delay: 4.045s;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-16 {
+  left: 600px;
+  animation-delay: 3.2s;
+  animation-duration: 3.5s;
+  animation-name: snowballStartRainFast;
+  transition-timing-function: ease-in;
+}
+.snowball-end-16 {
+  left: 650px;
+  animation-delay: 3.125s;
+  animation-duration: 2.5s;
+  animation-name: snowballStartRainFast;
+}
+.snowball-back-16 {
+  left: 645px;
+  animation-delay: 2.985s;
+  animation-duration: 5s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-16 {
+  left: 643px;
+  animation-delay: 4.435s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-16 {
+  left: 647px;
+  animation-delay: 5.38s;
+  animation-duration: 6.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-17 {
+  left: 640px;
+  animation-delay: 4.235s;
+  transition-timing-function: linear;
+}
+.snowball-end-17 {
+  left: 690px;
+  animation-delay: 2.265s;
+}
+.snowball-back-17 {
+  left: 685px;
+  animation-delay: 3.42s;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-17 {
+  left: 683px;
+  animation-delay: 4.395s;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-17 {
+  left: 687px;
+  animation-delay: 4.255000000000001s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-18 {
+  left: 680px;
+  animation-delay: 1.245s;
+  animation-duration: 3.5s;
+  animation-name: snowballStartRainFast;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainSlow;
+  transition-timing-function: ease-out;
+}
+.snowball-end-18 {
+  left: 730px;
+  animation-delay: 3.645s;
+  animation-duration: 2.5s;
+  animation-name: snowballStartRainFast;
+  animation-duration: 5s;
+  animation-name: snowballStartRainSlow;
+}
+.snowball-back-18 {
+  left: 725px;
+  animation-delay: 2.14s;
+  animation-duration: 5s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 6s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-18 {
+  left: 723px;
+  animation-delay: 4.325s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 8s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-18 {
+  left: 727px;
+  animation-delay: 6.565s;
+  animation-duration: 6.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-19 {
+  left: 720px;
+  animation-delay: 0.56s;
+  transition-timing-function: linear;
+}
+.snowball-end-19 {
+  left: 770px;
+  animation-delay: 3.775s;
+}
+.snowball-back-19 {
+  left: 765px;
+  animation-delay: 5.595000000000001s;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-19 {
+  left: 763px;
+  animation-delay: 4.02s;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-19 {
+  left: 767px;
+  animation-delay: 4.405s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-20 {
+  left: 760px;
+  animation-delay: 0.885s;
+  animation-duration: 3.5s;
+  animation-name: snowballStartRainFast;
+  transition-timing-function: ease-in-out;
+}
+.snowball-end-20 {
+  left: 810px;
+  animation-delay: 1.875s;
+  animation-duration: 2.5s;
+  animation-name: snowballStartRainFast;
+}
+.snowball-back-20 {
+  left: 805px;
+  animation-delay: 4.29s;
+  animation-duration: 5s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-20 {
+  left: 803px;
+  animation-delay: 2.065s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-20 {
+  left: 807px;
+  animation-delay: 1.225s;
+  animation-duration: 6.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-21 {
+  left: 800px;
+  animation-delay: 0s;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainSlow;
+  transition-timing-function: ease-out;
+}
+.snowball-end-21 {
+  left: 850px;
+  animation-delay: 2.135s;
+  animation-duration: 5s;
+  animation-name: snowballStartRainSlow;
+}
+.snowball-back-21 {
+  left: 845px;
+  animation-delay: 2.31s;
+  animation-duration: 6s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-21 {
+  left: 843px;
+  animation-delay: 1.59s;
+  animation-duration: 8s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-21 {
+  left: 847px;
+  animation-delay: 4.005s;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-22 {
+  left: 840px;
+  animation-delay: 1s;
+  animation-duration: 3.5s;
+  animation-name: snowballStartRainFast;
+  transition-timing-function: ease;
+}
+.snowball-end-22 {
+  left: 890px;
+  animation-delay: 1.525s;
+  animation-duration: 2.5s;
+  animation-name: snowballStartRainFast;
+}
+.snowball-back-22 {
+  left: 885px;
+  animation-delay: 1.77s;
+  animation-duration: 5s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-22 {
+  left: 883px;
+  animation-delay: 7.250000000000001s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-22 {
+  left: 887px;
+  animation-delay: 8.475000000000001s;
+  animation-duration: 6.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-23 {
+  left: 880px;
+  animation-delay: 6.825s;
+  transition-timing-function: linear;
+}
+.snowball-end-23 {
+  left: 930px;
+  animation-delay: 7.915s;
+}
+.snowball-back-23 {
+  left: 925px;
+  animation-delay: 8.545s;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-23 {
+  left: 923px;
+  animation-delay: 4.529999999999999s;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-23 {
+  left: 927px;
+  animation-delay: 2.43s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-24 {
+  left: 920px;
+  animation-delay: 1.065s;
+  animation-duration: 3.5s;
+  animation-name: snowballStartRainFast;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainSlow;
+  transition-timing-function: ease-in;
+}
+.snowball-end-24 {
+  left: 970px;
+  animation-delay: 2.415s;
+  animation-duration: 2.5s;
+  animation-name: snowballStartRainFast;
+  animation-duration: 5s;
+  animation-name: snowballStartRainSlow;
+}
+.snowball-back-24 {
+  left: 965px;
+  animation-delay: 4.27s;
+  animation-duration: 5s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 6s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-24 {
+  left: 963px;
+  animation-delay: 3.835s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 8s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-24 {
+  left: 967px;
+  animation-delay: 4.78s;
+  animation-duration: 6.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-25 {
+  left: 960px;
+  animation-delay: 2.805s;
+  transition-timing-function: ease-in-out;
+}
+.snowball-end-25 {
+  left: 1010px;
+  animation-delay: 3.36s;
+}
+.snowball-back-25 {
+  left: 1005px;
+  animation-delay: 3.885s;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-25 {
+  left: 1003px;
+  animation-delay: 2.62s;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-25 {
+  left: 1007px;
+  animation-delay: 3.74s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-26 {
+  left: 1000px;
+  animation-delay: 0.9s;
+  animation-duration: 3.5s;
+  animation-name: snowballStartRainFast;
+  transition-timing-function: ease;
+}
+.snowball-end-26 {
+  left: 1050px;
+  animation-delay: 6.595000000000001s;
+  animation-duration: 2.5s;
+  animation-name: snowballStartRainFast;
+}
+.snowball-back-26 {
+  left: 1045px;
+  animation-delay: 6.630000000000001s;
+  animation-duration: 5s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-26 {
+  left: 1043px;
+  animation-delay: 3.085s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-26 {
+  left: 1047px;
+  animation-delay: 2.63s;
+  animation-duration: 6.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-27 {
+  left: 1040px;
+  animation-delay: 6.6s;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainSlow;
+  transition-timing-function: ease-out;
+}
+.snowball-end-27 {
+  left: 1090px;
+  animation-delay: 5.145s;
+  animation-duration: 5s;
+  animation-name: snowballStartRainSlow;
+}
+.snowball-back-27 {
+  left: 1085px;
+  animation-delay: 5.25s;
+  animation-duration: 6s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-27 {
+  left: 1083px;
+  animation-delay: 2.15s;
+  animation-duration: 8s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-27 {
+  left: 1087px;
+  animation-delay: 2.5s;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-28 {
+  left: 1080px;
+  animation-delay: 3.68s;
+  animation-duration: 3.5s;
+  animation-name: snowballStartRainFast;
+  transition-timing-function: ease-in;
+}
+.snowball-end-28 {
+  left: 1130px;
+  animation-delay: 1.145s;
+  animation-duration: 2.5s;
+  animation-name: snowballStartRainFast;
+}
+.snowball-back-28 {
+  left: 1125px;
+  animation-delay: 1.18s;
+  animation-duration: 5s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-28 {
+  left: 1123px;
+  animation-delay: 1.165s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-28 {
+  left: 1127px;
+  animation-delay: 3.265s;
+  animation-duration: 6.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-29 {
+  left: 1120px;
+  animation-delay: 0.89s;
+  transition-timing-function: linear;
+}
+.snowball-end-29 {
+  left: 1170px;
+  animation-delay: 2.675s;
+}
+.snowball-back-29 {
+  left: 1165px;
+  animation-delay: 2.22s;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-29 {
+  left: 1163px;
+  animation-delay: 2.54s;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-29 {
+  left: 1167px;
+  animation-delay: 1.665s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-30 {
+  left: 1160px;
+  animation-delay: 1.155s;
+  animation-duration: 3.5s;
+  animation-name: snowballStartRainFast;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainSlow;
+  transition-timing-function: ease-in-out;
+}
+.snowball-end-30 {
+  left: 1210px;
+  animation-delay: 3.415s;
+  animation-duration: 2.5s;
+  animation-name: snowballStartRainFast;
+  animation-duration: 5s;
+  animation-name: snowballStartRainSlow;
+}
+.snowball-back-30 {
+  left: 1205px;
+  animation-delay: 2.05s;
+  animation-duration: 5s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 6s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-30 {
+  left: 1203px;
+  animation-delay: 1.435s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 8s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-30 {
+  left: 1207px;
+  animation-delay: 0.595s;
+  animation-duration: 6.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-31 {
+  left: 1200px;
+  animation-delay: 0s;
+  transition-timing-function: linear;
+}
+.snowball-end-31 {
+  left: 1250px;
+  animation-delay: 1.68s;
+}
+.snowball-back-31 {
+  left: 1245px;
+  animation-delay: 0.91s;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-31 {
+  left: 1243px;
+  animation-delay: 1.39s;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-31 {
+  left: 1247px;
+  animation-delay: 3.105s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-32 {
+  left: 1240px;
+  animation-delay: 1.185s;
+  animation-duration: 3.5s;
+  animation-name: snowballStartRainFast;
+  transition-timing-function: ease-in;
+}
+.snowball-end-32 {
+  left: 1290px;
+  animation-delay: 2.645s;
+  animation-duration: 2.5s;
+  animation-name: snowballStartRainFast;
+}
+.snowball-back-32 {
+  left: 1285px;
+  animation-delay: 1.77s;
+  animation-duration: 5s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-32 {
+  left: 1283px;
+  animation-delay: 4.6s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-32 {
+  left: 1287px;
+  animation-delay: 3.2s;
+  animation-duration: 6.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-33 {
+  left: 1280px;
+  animation-delay: 3.135s;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainSlow;
+  transition-timing-function: ease-out;
+}
+.snowball-end-33 {
+  left: 1330px;
+  animation-delay: 3.11s;
+  animation-duration: 5s;
+  animation-name: snowballStartRainSlow;
+}
+.snowball-back-33 {
+  left: 1325px;
+  animation-delay: 4.02s;
+  animation-duration: 6s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-33 {
+  left: 1323px;
+  animation-delay: 3.625s;
+  animation-duration: 8s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-33 {
+  left: 1327px;
+  animation-delay: 4.08s;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-34 {
+  left: 1320px;
+  animation-delay: 1.5s;
+  animation-duration: 3.5s;
+  animation-name: snowballStartRainFast;
+  transition-timing-function: ease;
+}
+.snowball-end-34 {
+  left: 1370px;
+  animation-delay: 1.045s;
+  animation-duration: 2.5s;
+  animation-name: snowballStartRainFast;
+}
+.snowball-back-34 {
+  left: 1365px;
+  animation-delay: 2.305s;
+  animation-duration: 5s;
+  animation-name: snowballStartRainBack;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-34 {
+  left: 1363px;
+  animation-delay: 4.965s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-34 {
+  left: 1367px;
+  animation-delay: 4.300000000000001s;
+  animation-duration: 6.5s;
+  animation-name: snowballStartRainBackBack;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-start-35 {
+  left: 1360px;
+  animation-delay: 0.825s;
+  transition-timing-function: ease-in-out;
+}
+.snowball-end-35 {
+  left: 1410px;
+  animation-delay: 6.970000000000001s;
+}
+.snowball-back-35 {
+  left: 1405px;
+  animation-delay: 6.41s;
+  animation-duration: 5.5s;
+  animation-name: snowballStartRainBack;
+}
+.snowball-back-back-35 {
+  left: 1403px;
+  animation-delay: 3.845s;
+  animation-duration: 7.5s;
+  animation-name: snowballStartRainBackBack;
+}
+.snowball-back-back-right-35 {
+  left: 1407px;
+  animation-delay: 1.22s;
+  animation-duration: 7s;
+  animation-name: snowballStartRainBackBack;
+}
+@-moz-keyframes snowballStartRain {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+    top: 90vh;
+  }
+}
+@-webkit-keyframes snowballStartRain {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+    top: 90vh;
+  }
+}
+@-o-keyframes snowballStartRain {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+    top: 90vh;
+  }
+}
+@keyframes snowballStartRain {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+    top: 90vh;
+  }
+}
+@-moz-keyframes snowballStartRainBack {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    top: 90vh;
+  }
+}
+@-webkit-keyframes snowballStartRainBack {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    top: 90vh;
+  }
+}
+@-o-keyframes snowballStartRainBack {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    top: 90vh;
+  }
+}
+@keyframes snowballStartRainBack {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    top: 90vh;
+  }
+}
+@-moz-keyframes snowballStartRainBackBack {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+    top: 80vh;
+  }
+}
+@-webkit-keyframes snowballStartRainBackBack {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+    top: 80vh;
+  }
+}
+@-o-keyframes snowballStartRainBackBack {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+    top: 80vh;
+  }
+}
+@keyframes snowballStartRainBackBack {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+    top: 80vh;
+  }
+}
+@-moz-keyframes snowballStartRainFast {
+  0% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.1;
+    top: 90vh;
+  }
+}
+@-webkit-keyframes snowballStartRainFast {
+  0% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.1;
+    top: 90vh;
+  }
+}
+@-o-keyframes snowballStartRainFast {
+  0% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.1;
+    top: 90vh;
+  }
+}
+@keyframes snowballStartRainFast {
+  0% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.1;
+    top: 90vh;
+  }
+}
+@-moz-keyframes snowballStartRainSlow {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0.45;
+  }
+  100% {
+    opacity: 0.1;
+    top: 90vh;
+  }
+}
+@-webkit-keyframes snowballStartRainSlow {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0.45;
+  }
+  100% {
+    opacity: 0.1;
+    top: 90vh;
+  }
+}
+@-o-keyframes snowballStartRainSlow {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0.45;
+  }
+  100% {
+    opacity: 0.1;
+    top: 90vh;
+  }
+}
+@keyframes snowballStartRainSlow {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0.45;
+  }
+  100% {
+    opacity: 0.1;
+    top: 90vh;
+  }
+}
+@-moz-keyframes snowballStartRainEnd {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 90vh;
+  }
+}
+@-webkit-keyframes snowballStartRainEnd {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 90vh;
+  }
+}
+@-o-keyframes snowballStartRainEnd {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 90vh;
+  }
+}
+@keyframes snowballStartRainEnd {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 90vh;
+  }
+}
