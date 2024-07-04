@@ -3,11 +3,7 @@
 add  = "git subtree add --prefix "
 
 PROJECTS.each do |folder, git_repo| 
-    if Dir.exist?("../#{folder}")
-        puts "!!! #{folder} already exists in the parent directory !!!"
-    else
-        system(`cd .. && #{add}#{folder} #{git_repo} main`)
-    end
+        system(`cd .. && #{add}#{folder} #{git_repo} main`) if Dir.exist?("../#{folder}")
 end
 
 system(`git push`)
