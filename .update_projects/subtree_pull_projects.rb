@@ -15,9 +15,6 @@ threads.each(&:join)
 
 push_thread = Thread.new do
     result = system("git push")
-    unless result
-        puts "Error pushing changes"
-    end
 end
 
 push_thread.join
