@@ -13,5 +13,8 @@ PROJECTS.each do |folder, git_repo|
    end
 end
 
-system(`git push`)
-exit true
+if system(`git push`)
+  exit true
+else
+  exit false
+end
