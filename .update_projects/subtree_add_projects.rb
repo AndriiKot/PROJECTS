@@ -1,5 +1,4 @@
-﻿require_relative 'config'
-
+﻿
 add = "git subtree add --prefix "
 
 PROJECTS.each do |folder, git_repo| 
