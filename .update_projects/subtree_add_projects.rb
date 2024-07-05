@@ -5,7 +5,6 @@ add = "git subtree add --prefix "
 #Dir.chdir("..")
 
 PROJECTS.each do |folder, git_repo|
-Dir.chdir("..")
  
     unless Dir.exist?(folder)
     	system(`#{add}#{folder} #{git_repo} main`)
