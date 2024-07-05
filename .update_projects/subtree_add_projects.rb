@@ -13,3 +13,4 @@ PROJECTS.each do |folder, git_repo|
 end
 
 system(`git push`)
+exit true
