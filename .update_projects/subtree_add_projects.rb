@@ -3,7 +3,6 @@
 add = "git subtree add --prefix "
 
 Dir.chdir("..")
-#folder = "Vue"   ### !!! такая папка на уровень выше есть !!!
 
 PROJECTS.each do |folder, git_repo|
  
@@ -11,7 +10,7 @@ PROJECTS.each do |folder, git_repo|
     	system(`#{add}#{folder} #{'Vue'} main`)
     end
     if Dir.exist?(folder)
-        puts "#{folder}: Exist !!!!" ### !!! выводится в терминал !!!
+        puts "\n\n\n\#{folder}: Exist !!!!\n\n\n" ### !!! выводится в терминал !!!
     end
 end
 
