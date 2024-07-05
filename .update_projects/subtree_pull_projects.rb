@@ -3,7 +3,6 @@
 pull = "git subtree pull --prefix "
 
 PROJECTS.each do |folder, git_repo| 
-   puts folder;
    system(`#{pull}#{folder} #{git_repo} main`)
 end
 
