@@ -2,6 +2,7 @@
 require_relative 'subtree_add_projects'
 require_relative 'subtree_pull_projects'
 
+Dir.chdir("..")
 
 # system(`ruby subtree_add_projects.rb`) 
 # system(`ruby subtree_pull_projects.rb`)
