@@ -6,7 +6,7 @@ Dir.chdir("..")
 
 PROJECTS.each do |folder, git_repo| 
    if Dir.exist?(folder)
-     puts "\n\n\n #{folder}: Exist !!!\n\n\n" 
+     puts "\n #{folder}: Exist !!!\n" 
    else
      puts "Else !!!"
      system(`#{add}#{folder} #{git_repo} main`)
