@@ -1,14 +1,13 @@
-﻿require_relative 'config'
+﻿require_relative '../config'
 
 class SubtreeManager
 
-  def initialize(base_path: '../', **project_hash)
+  def initialize(base_path: '../../', **project_hash)
     @projects = project_hash
     @commands = %w[add pull]
     @path = base_path
     @folders = Dir.entries(@path)
   end
-
   
   def manage_subtree
     @commands.each do |command|
@@ -24,6 +23,7 @@ class SubtreeManager
     subtree_command = "git subtree #{action} --prefix #{project_directory} #{repository_url} main"
     system("cd #{@path} && #{subtree_command}")
   end
+
 end
 
 update = SubtreeManager.new(**PROJECTS)
