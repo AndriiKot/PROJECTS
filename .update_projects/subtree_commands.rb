@@ -11,17 +11,30 @@ class SubtreeManager
 
   
   def manage_subtree()
+    puts "Starting subtree management..."
     @commands.each do |com|
+      puts "Performing #{com} command..."
+      gets
       @projects.each do |folder, git_repo|
-        next if (com = 'add' && @folders.include?(folder))
+        # puts "Checking #{folder}..."
+        # gets
+        # next if (com == 'add' && @folders.include?(folder))
+        # puts "Executing command for #{folder}..."
+        # gets
+        next if (com == 'add' && @folders.include?(folder))
         perform_subtree_command(com, folder, git_repo)
+        # puts "Command for #{folder} executed successfully."
+        # gets
       end
     end
+    # puts "Subtree management complete."
+    # gets
   end
 
   private
   def perform_subtree_command(command, folder_name, git_repository)
-    system("git subtree #{command} --prefix #{folder_name} #{git_repository} main")
+    puts "!!!! SYSTEM !!!!"
+    system(`cd #{@path} && git subtree #{command} --prefix #{folder_name} #{git_repository} main`)
   end
 end
 
