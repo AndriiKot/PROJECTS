@@ -9,7 +9,7 @@ PROJECTS.each do |folder, git_repo|
 #    system(`#{add}#{folder} #{git_repo} main`)
     exec(`#{add}#{folder} #{git_repo} main`)
   else
-    puts "#{folder}: Exist !!!!"
+    puts "\n\n\n#{folder}: Exist !!!!\n\n\n"
   end
 end
 
