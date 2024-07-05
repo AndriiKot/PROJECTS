@@ -1,5 +1,4 @@
-﻿require_relative 'config'
-
+﻿
 pull = "git subtree pull --prefix "
 
 PROJECTS.each do |folder, git_repo| 
