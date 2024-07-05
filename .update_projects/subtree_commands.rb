@@ -13,7 +13,7 @@ class SubtreeManager
   def manage_subtree()
     @commands.each do |com|
       @projects.each do |folder, git_repo|
-        next if (com = 'add' && folders.include?(folder))
+        next if (com = 'add' && @folders.include?(folder))
         subtree(com, folder, git_repo)
       end
     end
