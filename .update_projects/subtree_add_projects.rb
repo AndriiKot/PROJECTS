@@ -9,7 +9,7 @@ PROJECTS.each do |folder, git_repo|
     unless Dir.exist?(folder)
     	system(`#{add}#{folder} #{'Vue'} main`)
     end
-    speel 2
+    sleep 2
     if Dir.exist?(folder)
         puts "\n\n\n\#{folder}: Exist !!!!\n\n\n" ### !!! выводится в терминал !!!
     end
