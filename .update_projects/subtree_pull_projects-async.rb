@@ -1,7 +1,7 @@
 ﻿require 'concurrent'
 require_relative 'config'
 
-Dir.chdir('..')
+#Dir.chdir('..')
 threads = []
 
 PROJECTS.each do |folder, git_repo| 
