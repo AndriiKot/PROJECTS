@@ -11,10 +11,10 @@ class SubtreeManager
 
   
   def manage_subtree()
-    puts "Starting subtree management..."
+    # puts "Starting subtree management..."
     @commands.each do |com|
-      puts "Performing #{com} command..."
-      gets
+      # puts "Performing #{com} command..."
+      # gets
       @projects.each do |folder, git_repo|
         # puts "Checking #{folder}..."
         # gets
