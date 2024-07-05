@@ -5,13 +5,12 @@ add = "git subtree add --prefix "
 Dir.chdir("..")
 
 PROJECTS.each do |folder, git_repo| 
-    unless  Dir.exist?("#{folder}")
-      puts "\n\n\n!!!! #{folder}: Exist !!!!\n\n\n"
-    else 
+   if Dir.exist?(folder)
+     puts "\n\n\n #{folder}: Exist !!!\n\n\n" 
+   else
+     puts "Else !!!"
      system(`#{add}#{folder} #{git_repo} main`)
-#    exec(`#{add}#{folder} #{git_repo} main`)
-#     spawn(`#{add}#{folder} #{git_repo} main`)
-  end
+   end
 end
 
 system(`git push`)
