@@ -26,10 +26,12 @@ body {
 .wrapper_images {
   .images {
     --gap: 16px;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap);
   }
+  
   @media only screen and (max-width: 1366px) {
     .images {
       grid-template-columns: repeat(2, 1fr);
@@ -42,13 +44,12 @@ body {
     .images {
       grid-template-columns: repeat(1, 1fr);
       --height: 500px;
-
     }
   }
 
   img {
     width: 100%;
-    maxheight: var(--height);
+    max-height: var(--height);
  
     display: block;
     object-fit: cover;
