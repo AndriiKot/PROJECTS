@@ -21,3 +21,15 @@ body {
     background: #f1f1f1;
   }
 }
+
+.wrapper_images {
+  .images {
+    /* display: grid; */
+  }
+
+  img {
+    width: 100px;
+    display: block;
+  }
+
+}
