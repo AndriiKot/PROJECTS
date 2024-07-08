@@ -1,0 +1,56 @@
+﻿html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  font-family: sans-serif;
+  background: #f1f1f1;
+
+}
+
+.header_images {
+  h1 {
+    text-align: center;
+    padding: 5px;
+
+  }
+}
+
+.wrapper_images {
+  .images {
+    --gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+  }
+  @media only screen and (max-width: 1366px) {
+    .images {
+      grid-template-columns: repeat(2, 1fr);
+
+      --gap: 8px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .images {
+      grid-template-columns: repeat(1, 1fr);
+      --height: 500px;
+
+    }
+  }
+
+  img {
+    width: 100%;
+    maxheight: var(--height);
+ 
+    display: block;
+    object-fit: cover;
+  }
+}
