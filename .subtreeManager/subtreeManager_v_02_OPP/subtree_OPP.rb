@@ -21,7 +21,7 @@ class SubtreeManager
   private
   def perform_subtree_command(action, project_directory, repository_url)
     subtree_command = "git subtree #{action} --prefix #{project_directory} #{repository_url} main"
-    system("cd #{@path} && #{subtree_command}")
+    system("cd #{@path} && #{subtree_command} && git push")
   end
 
 end
