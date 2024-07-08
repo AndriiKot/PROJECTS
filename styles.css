@@ -12,14 +12,12 @@ html,
 body {
   font-family: sans-serif;
   background: #f1f1f1;
-
 }
 
 .header_images {
   h1 {
     text-align: center;
     padding: 5px;
-
   }
 }
 
@@ -31,7 +29,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap);
   }
-  
+
   @media only screen and (max-width: 1366px) {
     .images {
       grid-template-columns: repeat(2, 1fr);
@@ -50,8 +48,13 @@ body {
   img {
     width: 100%;
     max-height: var(--height);
- 
+
     display: block;
     object-fit: cover;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
   }
 }
