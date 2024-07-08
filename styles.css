@@ -24,11 +24,14 @@ body {
 
 .wrapper_images {
   .images {
-    /* display: grid; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
   }
 
   img {
-    width: 100px;
+    width: 100%;
+
     display: block;
   }
 
