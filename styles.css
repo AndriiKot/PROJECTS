@@ -49,12 +49,15 @@ body {
     width: 100%;
     max-height: var(--height);
 
-    display: block;
     object-fit: cover;
 
+    cursor: pointer;
+    opacity: 0.5;
+    filter: grayscale(100%);
+
     &:hover {
-      cursor: pointer;
-      opacity: 0.8;
+      filter: grayscale(0);
+      opacity: 1;
     }
   }
 }
