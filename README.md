@@ -2,8 +2,7 @@
 
 ## version 1.3.1
 
-#### Hover version
-
+#### Hover version 1.3.1:
 ![images demo hover](https://github.com/AndriiKot/Images_Grid/blob/main/_demo_/images/ver_1_3_1/__v_1_3_1__.png)
 
 #### Media 768px:
