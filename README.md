@@ -4,7 +4,7 @@
 
 #### Hover version
 
-![images demo](https://github.com/AndriiKot/Images_Grid/blob/main/_demo_/images/ver_1_3_1/__v_1_3_1__.png)
+![images demo hover](https://github.com/AndriiKot/Images_Grid/blob/main/_demo_/images/ver_1_3_1/__v_1_3_1__.png)
 
 #### Media 768px:
 
