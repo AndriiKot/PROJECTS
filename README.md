@@ -2,11 +2,11 @@
 
 ## ! For the code to work correctly, use 'live server' in Visual Studio Code !
 
-## version 2.0.0
+## version 2.1.0
 
-#### Hover version 2.0.0:
+#### Hover version 2.1.0:
 
-![images demo hover ver 2.0.0](https://github.com/AndriiKot/Images_Grid/blob/main/_demo_/images/ver_2_0_0/__v_2_0_0__.png)
+![images demo hover ver 2.1.0](https://github.com/AndriiKot/Images_Grid/blob/main/_demo_/images/ver_2_1_0/__v_2_1_0__.png)
 
 #### Media 768px:
 
