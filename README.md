@@ -6,7 +6,7 @@
 
 #### Hover version 2.0.0:
 
-![images demo hover ver 2.0.0]()
+![images demo hover ver 2.0.0](https://github.com/AndriiKot/Images_Grid/blob/main/_demo_/images/ver_2_0_0/__v_2_0_0__.png)
 
 #### Media 768px:
 
