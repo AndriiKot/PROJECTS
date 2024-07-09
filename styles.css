@@ -22,26 +22,26 @@ body {
 }
 
 .wrapper_images {
-  .images {
-    --gap: 16px;
+  --gap: 10px;
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--gap);
-  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
 
   @media only screen and (max-width: 1366px) {
-    .images {
-      grid-template-columns: repeat(2, 1fr);
-
-      --gap: 8px;
-    }
+    grid-template-columns: repeat(2, 1fr);
+    --gap: 8px;
   }
 
   @media only screen and (max-width: 768px) {
-    .images {
-      grid-template-columns: repeat(1, 1fr);
-      --height: 500px;
+    grid-template-columns: repeat(1, 1fr);
+    --height: 500px;
+  }
+
+  &:hover {
+    img {
+      opacity: 0.5;
+      filter: grayscale(100%);
     }
   }
 
@@ -50,10 +50,7 @@ body {
     max-height: var(--height);
 
     object-fit: cover;
-
     cursor: pointer;
-    opacity: 0.5;
-    filter: grayscale(100%);
 
     &:hover {
       filter: grayscale(0);
