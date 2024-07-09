@@ -38,9 +38,15 @@ body {
     --height: 500px;
   }
 
-  &:has(img:hover) img:not(:hover) {
-    opacity: 0.5;
-    filter: grayscale(100%);
+  &:has(img:hover) {
+    & img:not(:hover) {
+      opacity: 0.5;
+      filter: grayscale(100%);
+    }
+    & img:hover {
+      border-radius: 40px 0 40px 0;
+      overflow: hidden;
+    }
   }
 
   img {
