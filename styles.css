@@ -38,11 +38,9 @@ body {
     --height: 500px;
   }
 
-  &:hover {
-    img {
-      opacity: 0.5;
-      filter: grayscale(100%);
-    }
+  &:has(img:hover) img:not(:hover) {
+    opacity: 0.5;
+    filter: grayscale(100%);
   }
 
   img {
@@ -51,10 +49,5 @@ body {
 
     object-fit: cover;
     cursor: pointer;
-
-    &:hover {
-      filter: grayscale(0);
-      opacity: 1;
-    }
   }
 }
