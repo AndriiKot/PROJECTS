@@ -8,7 +8,7 @@ class READMEManager
     end
     def update
       unless diff_template? 
-        file_open(@path + 'README.md') 
+        update_file(@path + 'README.md') 
         git_push()
       end
     end    
@@ -37,7 +37,7 @@ class READMEManager
           @new_template += "### [#{key}](#{value}): #{count_projects(key)}\n"
         end
     end
-    def file_open(path, mode = "w+") 
+    def update_file(path, mode = "w+") 
         File.open(path, mode) do |f|
             f.puts(@new_template)
         end
