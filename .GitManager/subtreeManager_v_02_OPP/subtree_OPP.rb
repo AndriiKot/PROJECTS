@@ -1,10 +1,10 @@
 ﻿
 class SubtreeManager
 
-  def initialize(base_path: '../../', **project_hash)
+  def initialize(path: '../../', **project_hash)
     @projects = project_hash
     @commands = %w[add pull]
-    @path = base_path
+    @path = path
     @folders = Dir.entries(@path)
   end
   
