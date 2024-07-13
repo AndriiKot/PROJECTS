@@ -22,10 +22,7 @@ File.open('../README.md', 'w+') do |f|
   f.puts(template)
 end
 
-system(`cd ..`)
-system(`git add .`)
-system(`git commit -m "PROJECTS !!! 'README.md update' !!!"`)
-system(`git push`)
+system(`cd .. && git add . && git commit -m "PROJECTS !!! 'README.md update' !!!" && git push` )
 
 
 
