@@ -41,7 +41,7 @@ class READMEManager
     end
 
     def create_template() 
-        @new_template += "Total projects: #{total_count_projects()}\n\n"
+        @new_template += "### Total projects: #{total_count_projects()}\n\n"
         @config.each do |key, value|
           @new_template += "### [#{key}](#{value}): #{count_projects(key)}\n"
         end
