@@ -3,7 +3,7 @@
 class READMEManager 
     def initialize(path: './', template: '', config: {})
         @path = path
-        @template = template
+        @new_template = template
         @config = config
     end
     def update
@@ -11,7 +11,7 @@ class READMEManager
         create_template()
         file_open(@path + 'README.md') 
         git_push()
-     end
+      end
     end    
     
     private
@@ -22,7 +22,7 @@ class READMEManager
 
     def diff_template?
         create_template()
-        old_template() == @template
+        old_template() == @new_template
     end
 
     def count_projects(project)
@@ -35,12 +35,12 @@ class READMEManager
 
     def create_template() 
         @config.each do |key, value|
-          @template += "### [#{key}](#{value}): #{count_projects(key)}\n"
+          @new_template += "### [#{key}](#{value}): #{count_projects(key)}\n"
         end
     end
     def file_open(path, mode = "w+") 
         File.open(path, mode) do |f|
-            f.puts(@template)
+            f.puts(@new_template)
         end
     end
     def git_push
