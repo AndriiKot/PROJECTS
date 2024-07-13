@@ -1,6 +1,6 @@
 # My Projects: 
 
-Total projects: 11
+### Total projects: 11
 
 ### [Vue](https://github.com/AndriiKot/Vue.git): 1
 ### [React](https://github.com/AndriiKot/React.git): 6
