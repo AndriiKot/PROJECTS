@@ -7,13 +7,23 @@ class READMEManager
         @config = config
     end
     def update
+      unless diff_template? 
         create_template()
         file_open(@path + 'README.md') 
         git_push()
+     end
     end    
     
-
     private
+
+    def old_template
+        template = File.read(@path + 'README.md')
+    end
+
+    def diff_template?
+        create_template()
+        old_template() == @template
+    end
 
     def count_projects(project)
         count = Dir.glob("#{@path}/#{project}/*")
@@ -21,7 +31,7 @@ class READMEManager
                            File.directory?(f) && 
                            !File.file?(f) && !File.basename(f).start_with?(".") 
                        end.count
-   end
+    end
 
     def create_template() 
         @config.each do |key, value|
