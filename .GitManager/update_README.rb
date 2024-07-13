@@ -38,7 +38,7 @@ class READMEManager
     end
 end
 
-READMEManager.new(path: '../', template: "# My Projects: \n\n", config: PROJECTS).count_projects
+READMEManager.new(path: '../', template: "# My Projects: \n\n", config: PROJECTS).update
 
 
 
