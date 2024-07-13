@@ -1,5 +1,4 @@
-﻿require_relative 'config.rb'
-
+﻿
 class READMEManager 
     def initialize(path: './', template: '', config: {})
         @path = path

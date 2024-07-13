@@ -1,5 +1,4 @@
-﻿require_relative '../config'
-
+﻿
 class SubtreeManager
 
   def initialize(base_path: '../../', **project_hash)
