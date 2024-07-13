@@ -26,6 +26,6 @@ class SubtreeManager
 
 end
 
-update = SubtreeManager.new(**PROJECTS)
-update.manage_subtree
+#update = SubtreeManager.new(**PROJECTS)
+#update.manage_subtree
 
