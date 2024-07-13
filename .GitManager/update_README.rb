@@ -8,7 +8,6 @@ class READMEManager
     end
     def update
       unless diff_template? 
-        create_template()
         file_open(@path + 'README.md') 
         git_push()
       end
