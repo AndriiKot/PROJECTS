@@ -12,10 +12,20 @@ class READMEManager
         git_push()
     end    
     
+
     private
+
+    def count_projects(project)
+        count = Dir.glob("#{@path}/#{project}/*")
+                       .select do |f| 
+                           File.directory?(f) && 
+                           !File.file?(f) && !File.basename(f).start_with?(".") 
+                       end.count
+   end
+
     def create_template() 
         @config.each do |key, value|
-          @template += "### [#{key}](#{value})\n"
+          @template += "### [#{key}](#{value}): #{count_projects(key)}\n"
         end
     end
     def file_open(path, mode = "w+") 
@@ -28,7 +38,7 @@ class READMEManager
     end
 end
 
-READMEManager.new(path: '../', template: "# My Projects: \n\n", config: PROJECTS).update
+READMEManager.new(path: '../', template: "# My Projects: \n\n", config: PROJECTS).count_projects
 
 
 
