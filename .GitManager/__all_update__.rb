@@ -1,5 +1,5 @@
 ﻿require_relative './config'
-require_relative './subtreeManager_v_02_OPP/subtree_OPP.rb'
+require_relative './subtreeManager_v_02_OOP/subtree_OOP.rb'
 require_relative './readmeManager_v_1_0_0/update_README.rb'
 
 main_path = '../'
