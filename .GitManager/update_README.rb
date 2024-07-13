@@ -47,7 +47,6 @@ class READMEManager
     end
 end
 
-READMEManager.new(path: '../', template: "# My Projects: \n\n", config: PROJECTS).update
 
 
 
