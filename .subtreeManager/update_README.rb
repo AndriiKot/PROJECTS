@@ -12,7 +12,6 @@ File.open('../README.md', 'w+') do |f|
 end
 
 class READMEManager 
-
     def initialize(path: './', template: '', config: {})
         @path = path
         @template = template
