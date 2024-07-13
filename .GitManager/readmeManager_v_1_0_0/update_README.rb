@@ -20,7 +20,6 @@ class READMEManager
     end
 
     def diff_template?
-        create_template()
         old_template() == create_template()
     end
 
