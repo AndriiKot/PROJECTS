@@ -16,7 +16,7 @@ class READMEManager
     private
 
     def old_template
-        template = File.read(@path + 'README.md')
+      File.read(@path + 'README.md')
     end
 
     def diff_template?
