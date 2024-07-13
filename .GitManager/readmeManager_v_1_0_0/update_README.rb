@@ -21,7 +21,7 @@ class READMEManager
 
     def diff_template?
         create_template()
-        old_template() == @new_template
+        old_template() == create_template()
     end
 
     def count_projects(project)
@@ -45,6 +45,7 @@ class READMEManager
         @config.each do |key, value|
           @new_template += "### [#{key}](#{value}): #{count_projects(key)}\n"
         end
+        @new_template
     end
     def update_file(path, mode = "w+") 
         File.open(path, mode) do |f|
