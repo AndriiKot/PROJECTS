@@ -30,17 +30,17 @@ class READMEManager
           @template += "### [#{key}](#{value})\n"
         end
     end
-    def file_open(path, mode = "+w") 
+    def file_open(path, mode = "w+") 
         File.open(path, mode) do |f|
             f.puts(@template)
         end
     end
     def git_push
-        system(`cd .. && git add . && git commit -m "PROJECTS !!! 'README.md update' !!!" && git push` )
+        system(`cd #{@path} && git add . && git commit -m "PROJECTS !!! 'README.md update' !!!" && git push` )
     end
 end
 
-pp READMEManager.new(path: '../', template: template)
+READMEManager.new(path: '../', template: template).update
 
 
 
