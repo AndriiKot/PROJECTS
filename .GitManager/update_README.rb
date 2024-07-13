@@ -28,7 +28,9 @@ class READMEManager
     end
 end
 
-READMEManager.new(path: '../', template: "# My Projects: \n\n", config: PROJECTS).update
+ p READMEManager.new(path: '../', template: "# My Projects: \n\n", config: PROJECTS).update
+
+p "HI!"
 
 
 
