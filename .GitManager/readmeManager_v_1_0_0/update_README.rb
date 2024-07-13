@@ -11,6 +11,7 @@ class READMEManager
         git_push()
       end
     end    
+
     
     private
 
@@ -31,7 +32,16 @@ class READMEManager
                        end.count
     end
 
+    def total_count_projects()
+        total_count = 0
+            @config.each do |key, value|
+              total_count +=  count_projects(key)
+            end
+        total_count
+    end
+
     def create_template() 
+        @new_template += "Total projects: #{total_count_projects()}\n\n"
         @config.each do |key, value|
           @new_template += "### [#{key}](#{value}): #{count_projects(key)}\n"
         end
