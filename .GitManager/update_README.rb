@@ -1,16 +1,5 @@
 ﻿require_relative 'config.rb'
 
-
-template = "# My Projects: \n\n"
-
-PROJECTS.each do |key, value|
-  template += "### [#{key}](#{value})\n"
-end
- 
-File.open('../README.md', 'w+') do |f|
-  f.puts(template)
-end
-
 class READMEManager 
     def initialize(path: './', template: '', config: {})
         @path = path
@@ -39,7 +28,7 @@ class READMEManager
     end
 end
 
-READMEManager.new(path: '../', template: template).update
+READMEManager.new(path: '../', template: "# My Projects: \n\n", config: PROJECTS).update
 
 
 
