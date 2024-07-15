@@ -7,3 +7,25 @@
 *:after {
   box-sizing: inherit;
 }
+
+.top-share-facebook {
+  background-color: #ddd;
+  padding: 10px 0;
+  overflow: hidden;
+
+  .wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+
+    .fb {
+      text-align: center;
+
+      background: linear-gradient(to bottom, #4b68b9 0%, #3b55a0 100%);
+      color: #fff;
+      border-radius: 8px;
+      padding: 5px;
+
+      cursor: pointer;
+    }
+  }
+}
