@@ -33,7 +33,7 @@
 
       span {
         padding: 10px 0 10px 20px;
-        background: red;
+        background: url('./imgs/icons8-facebook-48.png') left center no-repeat;
     }
   }
 }
