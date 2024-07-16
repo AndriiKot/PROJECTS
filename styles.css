@@ -32,8 +32,12 @@
       }
 
       span {
-        padding: 10px 0 10px 20px;
+        --icon-facebook-size: 52px;
+        
+        display: inline-block;
+        padding: 10px 0 10px var(--icon-facebook-size);
         background: url('./imgs/icons8-facebook-48.png') left center no-repeat;
+        background-size: var(--icon-facebook-size);
     }
   }
 }
