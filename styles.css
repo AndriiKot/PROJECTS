@@ -26,6 +26,14 @@
       padding: 5px;
 
       cursor: pointer;
+      
+      &:hover {
+        background: linear-gradient(to bottom, #3b55a0 0%, #4b68b9 100%);
+      }
+
+      span {
+        padding: 10px 0 10px 20px;
+        background: red;
     }
   }
 }
