@@ -13,31 +13,44 @@
   padding: 10px 0;
   overflow: hidden;
 
+  max-width: 1080px;
+  margin: 0 auto;
+
   .wrapper {
-    max-width: 960px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+
+    .text {
+      flex: 4;
+    }
 
     .fb {
       text-align: center;
-
+      flex: 1;
       background: linear-gradient(to bottom, #4b68b9 0%, #3b55a0 100%);
       color: #fff;
       border-radius: 8px;
       padding: 5px;
+      margin: 0 10px 0 0;
 
       cursor: pointer;
-      
+
       &:hover {
         background: linear-gradient(to bottom, #3b55a0 0%, #4b68b9 100%);
       }
 
       span {
         --icon-facebook-size: 52px;
-        
+
         display: inline-block;
         padding: 10px 0 10px var(--icon-facebook-size);
-        background: url('./imgs/icons8-facebook-48.png') left center no-repeat;
+        background: url("./imgs/icons8-facebook-48.png") left center no-repeat;
         background-size: var(--icon-facebook-size);
+      }
     }
   }
 }
