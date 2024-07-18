@@ -43,3 +43,14 @@
   alt="Images Grid">
   </a>
 </div>
+
+#### [Flex box 01 'Share of Facebook'](https://github.com/AndriiKot/Flex-box__01/tree/main)
+
+<div> 
+  <a href="https://github.com/AndriiKot/Flex-box__01/tree/main"  target="_blank">
+  <img src='https://github.com/AndriiKot/Flex-box__01/blob/main/__demo__/__facebook__v2_0_0__.png'
+  alt="Flex box 01 'Share of Facebook">
+  </a>
+</div>
+
+
