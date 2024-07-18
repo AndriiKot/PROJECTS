@@ -53,20 +53,12 @@
   </a>
 </div>
 
-#### [Flex box 02 'Menu'](#### [Flex box 01 'Share of Facebook'](https://github.com/AndriiKot/Flex-box__01/tree/main)
+#### [Flex box 02 'Menu'](https://github.com/AndriiKot/Flex-box__02__Menu__)
 
 <div> 
-  <a href="https://github.com/AndriiKot/Flex-box__01/tree/main"  target="_blank">
+  <a href="https://github.com/AndriiKot/Flex-box__02__Menu__"  target="_blank">
   <img src='https://github.com/AndriiKot/Flex-box__02__Menu__/blob/main/__demo__/__menu_v1_0_0__.png'
   alt="Flex box 02 'Menu' ">
-  </a>
-</div>
-)
-
-<div> 
-  <a href="https://github.com/AndriiKot/Flex-box__01/tree/main"  target="_blank">
-  <img src='https://github.com/AndriiKot/Flex-box__01/blob/main/__demo__/__facebook__v2_0_0__.png'
-  alt="Flex box 01 'Share of Facebook">
   </a>
 </div>
 
