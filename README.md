@@ -1,4 +1,5 @@
 ﻿# CSS
+
 ### Technologies
 
 <div>
@@ -24,7 +25,6 @@
   alt="Text Animation 'LOADING">
   </a>
 </div>
-
 
 #### [Text Animation Rotate Y 360deg](https://github.com/AndriiKot/Text_RotateY_360deg_)
 
@@ -62,4 +62,11 @@
   </a>
 </div>
 
+#### [Flex box 03 'Cards'](https://github.com/AndriiKot/Flex-box__03__Cards__)
 
+<div> 
+  <a href="https://github.com/AndriiKot/Flex-box__03__Cards__"  target="_blank">
+  <img src='https://github.com/AndriiKot/Flex-box__03__Cards__/blob/main/__demo__/__version__1_0_0_middle_screen__.png'
+  alt="Flex box 03 'Cards' ">
+  </a>
+</div>
