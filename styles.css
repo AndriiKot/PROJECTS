@@ -16,6 +16,7 @@ body {
   .wrap {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   
     .titles {
       width: 100%;
