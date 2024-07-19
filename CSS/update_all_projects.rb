@@ -4,6 +4,7 @@
  Images_Grid: 'https://github.com/AndriiKot/Images_Grid.git',
  "Flex-box__01__Share_of_Facebook__": 'https://github.com/AndriiKot/Flex-box__01__Share_of_Facebook__',
  "Flex-box__02__Menu__": "https://github.com/AndriiKot/Flex-box__02__Menu__.git",
+ "Flex-box__03__Cards__": "https://github.com/AndriiKot/Flex-box__03__Cards__.git",
 }
 
 update = "git subtree pull --prefix "
