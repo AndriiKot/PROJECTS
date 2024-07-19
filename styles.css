@@ -9,5 +9,15 @@
 }
 
 body {
-  background-color: rgb(240, 216, 216)
+  background-color: rgb(240, 216, 216);
+}
+
+.profit {
+  .wrap {
+    .item {
+      img {
+        width: 100px;
+      }
+    }
+  }
 }
