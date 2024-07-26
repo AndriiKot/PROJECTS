@@ -2,6 +2,8 @@
   --main-color: rgb(14, 17, 17);
   --font-color: rgb(255, 255, 255);
   --secondary-color: rgb(31, 24, 24);
+  --link-color: #ff4e45;
+  --gap: 15px;
 }
 
 html {
@@ -15,25 +17,81 @@ main,
 footer,
 img,
 h1,
+h2,
 ul,
 p {
   margin: 0;
 }
 
+.avatar,
+header,
+main,
+h1,
+.description,
+.links {
+  margin-bottom: var(--gap);
+}
+
+a {
+  color: #6CA9EA;
+  text-decoration: none;
+  transition: color 0.7s;
+}
+
+a:hover,
+a:focus,
+a:active {
+  opacity: 0.8;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   background-color: var(--main-color);
   width: 500px;
-  min-height: 100vh;
+  min-height: calc(100vh - 2 * var(--gap));
   margin: 0 auto;
   text-align: center;
+  padding: var(--gap);
 }
+
 header,
 main,
 footer {
   width: 500px;
 }
-img {
+
+header {
+  position: relative;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.avatar {
   height: 250px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+.language {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+
+  list-style: none;
+  padding: 0;
+}
+
+.links img {
+  --link-size: 35px;
+  width: var(--link-size);
+  height: var(--link-size);
 }
