@@ -2,8 +2,18 @@
   --main-color: rgb(14, 17, 17);
   --font-color: rgb(255, 255, 255);
   --secondary-color: rgb(31, 24, 24);
-  --link-color: #ff4e45;
-  --gap: 15px;
+  --link-color: #6ca9ea;
+  --gap: 16px;
+  --gap-minimum: 10px;
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 html {
@@ -23,17 +33,15 @@ p {
   margin: 0;
 }
 
-.avatar,
-header,
-main,
-h1,
+.main,
+.name,
 .description,
 .links {
   margin-bottom: var(--gap);
 }
 
 a {
-  color: #6CA9EA;
+  color: #6ca9ea;
   text-decoration: none;
   transition: color 0.7s;
 }
@@ -41,38 +49,41 @@ a {
 a:hover,
 a:focus,
 a:active {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 body {
   display: flex;
   flex-direction: column;
   background-color: var(--main-color);
-  width: 500px;
-  min-height: calc(100vh - 2 * var(--gap));
+  width: 300px;
   margin: 0 auto;
   text-align: center;
   padding: var(--gap);
 }
 
-header,
-main,
-footer {
-  width: 500px;
-}
-
-header {
+.header {
   position: relative;
+  margin-bottom: 47px;
 }
 
-footer {
+.footer {
   margin-top: auto;
 }
 
+.name {
+  font-size: 24px;
+}
+
+.nickname {
+  font-size: 22px;
+}
+
 .avatar {
-  height: 250px;
+  height: 200px;
   object-fit: cover;
   border-radius: 50%;
+  border: 2px solid var(--link-color);
 }
 
 .language {
@@ -90,8 +101,46 @@ footer {
   padding: 0;
 }
 
-.links img {
+.linkedin-icon-svg,
+.github-icon-svg {
   --link-size: 35px;
   width: var(--link-size);
   height: var(--link-size);
+}
+
+.large-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 50px;
+  border-radius: 25px;
+  border: 2px solid var(--link-color);
+  font-size: 21px;
+  font-weight: 700;
+
+  transition: 0.4s ease-in-out;
+  opacity: unset;
+  &:hover {
+    background-color: var(--link-color);
+    color: var(--font-color);
+  }
+}
+
+@media screen and (min-width: 450px) {
+  body {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  body {
+    width: 400px;
+    .name {
+      font-size: 32px;
+    }
+    .nickname {
+      font-size: 28px;
+    }
+  }
 }
