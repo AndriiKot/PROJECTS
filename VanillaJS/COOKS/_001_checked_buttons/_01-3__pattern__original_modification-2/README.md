@@ -9,11 +9,11 @@ for (const item of menu) {
   btn.textContent = item;
   document.body.append(btn);
 
-  btn.addEventListener("click", (event) => {
-    const el = event.currentTarget; 				// or event.target
-    if (activeBtn) activeBtn.classList.remove("active");       // delete the old active button
+  btn.onclick = (event) => {
+    const el = event.currentTarget;                      // or event.target
+    if (activeBtn) activeBtn.classList.remove("active"); // delete the old active button
     el.classList.add("active");
-    activeBtn = btn;
-  });
+    activeBtn = el;
+  };
 }
 ```
