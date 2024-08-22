@@ -17,6 +17,14 @@
 
 ## Projects
 
+#### [Personal Portfolio](https://github.com/AndriiKot/Personal_Portfolio)
+
+<div>
+  <a href="https://github.com/AndriiKot/Personal.git"  target="_blank">
+  <img src="https://github.com/AndriiKot/Personal/blob/main/__demo__/__v3_2_0__.png" 
+   alt="Personal Portfolio">
+  </a>
+</div>
 #### [Loading](https://github.com/AndriiKot/Loading)
 
 <div>
