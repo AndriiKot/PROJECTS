@@ -1,5 +1,5 @@
-﻿# CSS
-
+﻿# CSS and HTML5 projects (No JS and no frameworks)
+#### ! For the code to work correctly, use 'live server' in Visual Studio Code !
 ### Technologies
 
 <div>
