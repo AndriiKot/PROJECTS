@@ -17,7 +17,7 @@
 
 ## Projects
 
-#### [Personal Portfolio](https://github.com/AndriiKot/Personal_Portfolio)
+#### [Personal Portfolio](https://github.com/AndriiKot/Personal)
 
 <div>
   <a href="https://github.com/AndriiKot/Personal.git"  target="_blank">
@@ -25,6 +25,7 @@
    alt="Personal Portfolio">
   </a>
 </div>
+
 #### [Loading](https://github.com/AndriiKot/Loading)
 
 <div>
