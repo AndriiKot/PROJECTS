@@ -1,21 +1,46 @@
-﻿# CSS
-
+﻿# CSS and HTML5 projects (No JS and Frameworks)
+#### ! For the code to work correctly, use 'live server' in Visual Studio Code !
 ### Technologies
 
-<div>
-  <a href="https://www.w3.org/Style/CSS/" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg" alt="CSS Logo" width="100" height="100">
-  </a>
-  <a href="https://html.spec.whatwg.org/multipage/" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5 logo" 
-    width="100" height="100">
-  </a>
-  <a href="https://stylus-lang.com/" target="_blank">
-    <img src="https://stylus-lang.com/logo.svg" alt="Stylus logo" width="100" height="100" >
-  </a>
-</div>
+<table>
+  <thead>
+    <tr>
+      <th height=33 width=100>HTML5</th>
+      <th height=33 width=100>CSS</th>
+      <th height=33 width=100>Stylus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td height=100 width=100>
+        <a href=https://html.spec.whatwg.org/multipage/>
+          <img src=https://github.com/AndriiKot/___Icons__and__Links___/blob/main/icons/html.svg alt=HTML5>
+        </a>
+      </td>
+      <td height=100 width=100>
+        <a href=https://www.w3.org/Style/CSS/>
+          <img src=https://github.com/AndriiKot/___Icons__and__Links___/blob/main/icons/css.svg alt=CSS>
+        </a>
+      </td>
+      <td height=100 width=100>
+        <a href=https://stylus-lang.com/>
+          <img src=https://github.com/AndriiKot/___Icons__and__Links___/blob/main/icons/stylus.svg alt=Stylus>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## Projects
+
+#### [Personal Portfolio](https://github.com/AndriiKot/Personal)
+
+<div>
+  <a href="https://github.com/AndriiKot/Personal.git"  target="_blank">
+  <img src="https://github.com/AndriiKot/Personal/blob/main/__demo__/__v3_2_0__.png" 
+   alt="Personal Portfolio">
+  </a>
+</div>
 
 #### [Loading](https://github.com/AndriiKot/Loading)
 
