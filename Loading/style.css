@@ -11,6 +11,119 @@ html {
   width: 0px; /* remove scrollbar space */
   background: transparent; /* optional: just make scrollbar invisible */
 }
+::-webkit-scrollbar-thumb {
+  background: #f00;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #282c4d;
+}
+body .container {
+  height: 100vh;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container div {
+  color: rgba(255,255,128,0.7);
+  font-size: 4em;
+  font-family: 'Arial';
+  display: inline-block;
+  animation: animation 2s infinite;
+}
+@-moz-keyframes animation {
+  0% {
+    color: rgba(255,255,128,0.1);
+  }
+  35% {
+    color: #ffff80;
+    transform: translateY(-3rem);
+    margin-left: 1rem;
+    text-shadow: 0 3rem 1rem #000;
+  }
+  100% {
+    color: rgba(255,255,128,0.7);
+  }
+}
+@-webkit-keyframes animation {
+  0% {
+    color: rgba(255,255,128,0.1);
+  }
+  35% {
+    color: #ffff80;
+    transform: translateY(-3rem);
+    margin-left: 1rem;
+    text-shadow: 0 3rem 1rem #000;
+  }
+  100% {
+    color: rgba(255,255,128,0.7);
+  }
+}
+@-o-keyframes animation {
+  0% {
+    color: rgba(255,255,128,0.1);
+  }
+  35% {
+    color: #ffff80;
+    transform: translateY(-3rem);
+    margin-left: 1rem;
+    text-shadow: 0 3rem 1rem #000;
+  }
+  100% {
+    color: rgba(255,255,128,0.7);
+  }
+}
+@keyframes animation {
+  0% {
+    color: rgba(255,255,128,0.1);
+  }
+  35% {
+    color: #ffff80;
+    transform: translateY(-3rem);
+    margin-left: 1rem;
+    text-shadow: 0 3rem 1rem #000;
+  }
+  100% {
+    color: rgba(255,255,128,0.7);
+  }
+}
+body .container :nth-child(1) {
+  animation-delay: 0.1s;
+}
+body .container :nth-child(2) {
+  animation-delay: 0.2s;
+}
+body .container :nth-child(3) {
+  animation-delay: 0.3s;
+}
+body .container :nth-child(4) {
+  animation-delay: 0.4s;
+}
+body .container :nth-child(5) {
+  animation-delay: 0.5s;
+}
+body .container :nth-child(6) {
+  animation-delay: 0.6s;
+}
+body .container :nth-child(7) {
+  animation-delay: 0.7s;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px; /* remove scrollbar space */
+  background: transparent; /* optional: just make scrollbar invisible */
+}
 /* optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
   background: #f00;
