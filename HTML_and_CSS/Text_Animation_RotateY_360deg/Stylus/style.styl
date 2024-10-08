@@ -1,20 +1,18 @@
-﻿@import "./variables.styl"
-@import "./mixins.styl"
-@import "./animation.styl"
+﻿@require "**/*.styl"
 
-body 
+body
     background color-background
     .container
          display flex
          position-center()
          font-size font-size-text
          color color-text
-         border border-size 
+         border border-size
          padding text-padding
          flex-wrap: nowrap
-        :hover div 
+        :hover div
             transform rotateY(360deg)
-        div 
+        div
             display inline-block
             font-family font-style
             transition .9s
